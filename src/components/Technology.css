@@ -64,11 +64,11 @@
 .tech-feature {
   background: rgba(14, 26, 16, 0.65);
   padding: 30px 22px;
-  transition: background 0.35s ease;
+  transition: background 0.35s ease, filter 0.35s ease;
 }
 
 .tech-feature:hover {
-  background: rgba(246, 242, 231, 0.07);
+  filter: brightness(1.25);
 }
 
 .tech-feature-index {
@@ -76,6 +76,46 @@
   font-size: 0.85rem;
   color: var(--c-gold);
   letter-spacing: 0.1em;
+}
+
+.tech-feature:nth-child(1) {
+  background: rgba(201, 168, 76, 0.22);
+}
+
+.tech-feature:nth-child(1) .tech-feature-index {
+  color: var(--c-gold);
+}
+
+.tech-feature:nth-child(2) {
+  background: rgba(111, 168, 201, 0.22);
+}
+
+.tech-feature:nth-child(2) .tech-feature-index {
+  color: #6fa8c9;
+}
+
+.tech-feature:nth-child(3) {
+  background: rgba(183, 196, 106, 0.22);
+}
+
+.tech-feature:nth-child(3) .tech-feature-index {
+  color: var(--c-olive-light);
+}
+
+.tech-feature:nth-child(4) {
+  background: rgba(226, 105, 79, 0.22);
+}
+
+.tech-feature:nth-child(4) .tech-feature-index {
+  color: var(--c-pomegranate-light);
+}
+
+.tech-feature:nth-child(5) {
+  background: rgba(245, 171, 82, 0.22);
+}
+
+.tech-feature:nth-child(5) .tech-feature-index {
+  color: var(--c-mandarin-light);
 }
 
 .tech-feature h3 {

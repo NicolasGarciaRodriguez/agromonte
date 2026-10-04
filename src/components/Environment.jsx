@@ -4,8 +4,10 @@ import "./Environment.css";
 
 const GALLERY_IMAGES = [
   "abeja-en-flor-primer-plano.jpeg",
+  "granada-primer-plano-floreciendo-2.jpeg",
   "bicho-para-combatir-plagas-primer-plano.jpeg",
   "bichos-para-combatir-plagas-primer-plano.jpeg",
+  "granada-primer-plano-floreciendo.jpeg",
 ];
 
 // Matches the original hand-picked stagger (2, 4, 3) rather than a plain

@@ -9,7 +9,7 @@ export const translations = {
     hero: {
       eyebrow: "Agricultura regenerativa · Ecológica · Tecnológica",
       tagline: "Producir hoy, cuidando el mañana.",
-      desc: "Más de 160 hectáreas en las que la granada, la mandarina Nadorcott y la aceituna Manzanilla crecen bajo un mismo principio: la rentabilidad y la regeneración del territorio se refuerzan, no compiten. Interactuamos con el medio ambiente en uno de los lugares más icónicos de toda Europa, el valle del Guadalquivir junto al coto de Doñana.",
+      desc: "Más de 160 hectáreas en las que la granada, la mandarina Nadorcott y la aceituna Manzanilla crecen bajo un mismo principio: la rentabilidad y la regeneración del territorio se refuerzan, no compiten. Interactuamos con el medio ambiente en uno de los lugares más icónicos de toda Europa, el valle del Guadalquivir junto a las marismas de Doñana.",
       ctaPrimary: "Descubre el proyecto",
       ctaSecondary: "Contacta con nosotros",
       scroll: "Desliza",
@@ -50,29 +50,68 @@ export const translations = {
         "Las granadas son ricas en compuestos fenólicos y polifenoles —entre ellos antocianinas— además de vitamina C y fibra, la granada despierta un interés creciente del consumidor por sus propiedades antioxidantes y anticancerígenas.",
       ],
       varieties: [
-        { name: "Acco", text: "Maduración temprana, piel roja intensa y sabor equilibrado." },
-        { name: "Wonderful", text: "Reconocimiento internacional, gran tamaño, jugosidad y abundancia de compuestos fenólicos." },
+        {
+          name: "Acco",
+          text: "Maduración temprana, piel roja intensa y sabor equilibrado.",
+        },
+        {
+          name: "Wonderful",
+          text: "Reconocimiento internacional, gran tamaño, jugosidad y abundancia de compuestos fenólicos.",
+        },
       ],
       stats: [
         { value: "25.000+", label: "granados ecológicos" },
         { value: "Acco · Wonderful", label: "dos variedades complementarias" },
-        { value: "100%", label: "sistema de túneles propio" },
+        {
+          value: "100%",
+          label: "sistema único de túneles, creando un microclima",
+        },
       ],
       gallery: {
         eyebrow: "En imágenes",
         title: "La granada, de la flor al túnel de cultivo",
         photos: [
-          { src: "sistema-de-tuneles-granadas-plano-general.jpeg", alt: "Sistema de túneles sobre los granados, plano general" },
-          { src: "sistema-de-tuneles-granadas-plano-medio.jpeg", alt: "Sistema de túneles sobre los granados, plano medio" },
-          { src: "granadas-primer-plano.jpeg", alt: "Granadas ecológicas en primer plano" },
-          { src: "granadas-primer-plano-2.jpeg", alt: "Detalle de granadas maduras en el árbol" },
+          {
+            src: "sistema-de-tuneles-granadas-plano-general.jpeg",
+            alt: "Sistema de túneles sobre los granados, plano general",
+          },
+          {
+            src: "sistema-de-tuneles-granadas-plano-medio.jpeg",
+            alt: "Sistema de túneles sobre los granados, plano medio",
+          },
+          {
+            src: "granadas-primer-plano.jpeg",
+            alt: "Granadas ecológicas en primer plano",
+          },
+          {
+            src: "granadas-primer-plano-2.jpeg",
+            alt: "Detalle de granadas maduras en el árbol",
+          },
           { src: "granadas-plano-medio.jpeg", alt: "Granados en plano medio" },
-          { src: "granadas-plano-medio-v2.jpeg", alt: "Granados ecológicos en la finca" },
-          { src: "granadas-plano-medio-v3.jpeg", alt: "Hilera de granados en producción" },
-          { src: "una-granada-primer-plano.jpeg", alt: "Granada entera en primer plano" },
-          { src: "una-granada-abierta-primer-plano.jpeg", alt: "Granada abierta mostrando sus granos" },
-          { src: "una-granada-abierta-primer-plano-v2.jpeg", alt: "Detalle de los granos de la granada" },
-          { src: "una-granada-abierta-primer-plano-v3.jpeg", alt: "Granada abierta, primer plano" },
+          {
+            src: "granadas-plano-medio-v2.jpeg",
+            alt: "Granados ecológicos en la finca",
+          },
+          {
+            src: "granadas-plano-medio-v3.jpeg",
+            alt: "Hilera de granados en producción",
+          },
+          {
+            src: "una-granada-primer-plano.jpeg",
+            alt: "Granada entera en primer plano",
+          },
+          {
+            src: "una-granada-abierta-primer-plano.jpeg",
+            alt: "Granada abierta mostrando sus granos",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v2.jpeg",
+            alt: "Detalle de los granos de la granada",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v3.jpeg",
+            alt: "Granada abierta, primer plano",
+          },
         ],
       },
     },
@@ -86,7 +125,7 @@ export const translations = {
         "Se cultiva con el mismo sistema tecnológico que optimiza agua, nutrición y recursos, aplicamos una agricultura regenerativa que cuida el entorno.",
       ],
       stats: [
-        { value: "20.000+", label: "mandarinos Nadorcott" },
+        { value: "20.000+", label: "mandarinos Nadorcott, variedad protegida" },
         { value: "Tardía", label: "ventana de maduración" },
         { value: "Europa", label: "principal mercado de exportación" },
       ],
@@ -94,13 +133,34 @@ export const translations = {
         eyebrow: "En imágenes",
         title: "Mandarina Nadorcott",
         photos: [
-          { src: "mandarinas-primer-plano.jpeg", alt: "Mandarinas Nadorcott en primer plano" },
-          { src: "mandarinas-primer-plano-2.jpeg", alt: "Detalle de mandarinas en el árbol" },
-          { src: "mandarinas-primer-plano-3.jpeg", alt: "Mandarinas Nadorcott maduras" },
-          { src: "mandarinas-primer-plano-v2.jpeg", alt: "Racimo de mandarinas en primer plano" },
-          { src: "mandarinas-plano-medio.jpeg", alt: "Mandarinos en plano medio" },
-          { src: "mandarinas-plano-medio-v2.jpeg", alt: "Plantación de mandarinos" },
-          { src: "mandarinas-plano-aereo.jpeg", alt: "Plantación de mandarinos vista aérea" },
+          {
+            src: "mandarinas-primer-plano.jpeg",
+            alt: "Mandarinas Nadorcott en primer plano",
+          },
+          {
+            src: "mandarinas-primer-plano-2.jpeg",
+            alt: "Detalle de mandarinas en el árbol",
+          },
+          {
+            src: "mandarinas-primer-plano-3.jpeg",
+            alt: "Mandarinas Nadorcott maduras",
+          },
+          {
+            src: "mandarinas-primer-plano-v2.jpeg",
+            alt: "Racimo de mandarinas en primer plano",
+          },
+          {
+            src: "mandarinas-plano-medio.jpeg",
+            alt: "Mandarinos en plano medio",
+          },
+          {
+            src: "mandarinas-plano-medio-v2.jpeg",
+            alt: "Plantación de mandarinos",
+          },
+          {
+            src: "mandarinas-plano-aereo.jpeg",
+            alt: "Plantación de mandarinos vista aérea",
+          },
         ],
       },
     },
@@ -115,17 +175,32 @@ export const translations = {
       ],
       stats: [
         { value: "5.000", label: "olivos Manzanilla" },
-        { value: "~36%", label: "de la producción española de aceituna de mesa" },
+        {
+          value: "~36%",
+          label: "de la producción española de aceituna de mesa",
+        },
         { value: "España", label: "líder mundial en exportación" },
       ],
       gallery: {
         eyebrow: "En imágenes",
         title: "La aceituna Manzanilla",
         photos: [
-          { src: "olivos-primer-plano.jpeg", alt: "Aceitunas Manzanilla en primer plano" },
-          { src: "olivos-plano-general.jpeg", alt: "Olivar Manzanilla, plano general" },
-          { src: "olivos-plano-general-v2.jpeg", alt: "Hileras del olivar Manzanilla" },
-          { src: "olivos-plano-general-v3.jpeg", alt: "Olivar Manzanilla visto en profundidad" },
+          {
+            src: "olivos-primer-plano.jpeg",
+            alt: "Aceitunas Manzanilla en primer plano",
+          },
+          {
+            src: "olivos-plano-general.jpeg",
+            alt: "Olivar Manzanilla, plano general",
+          },
+          {
+            src: "olivos-plano-general-v2.jpeg",
+            alt: "Hileras del olivar Manzanilla",
+          },
+          {
+            src: "olivos-plano-general-v3.jpeg",
+            alt: "Olivar Manzanilla visto en profundidad",
+          },
         ],
       },
     },
@@ -134,21 +209,48 @@ export const translations = {
       title: "Agricultura de precisión al servicio del cultivo",
       lead: "La domotización permite gestionar de forma coordinada el riego, la nutrición y las condiciones ambientales de toda la explotación. La tecnología no sustituye al conocimiento agrícola, lo potencia.",
       features: [
-        { title: "Monitorización en tiempo real", text: "Sensores que miden las necesidades reales de cada cultivo, parcela a parcela." },
-        { title: "Riego automatizado", text: "Ajuste continuo del riego para optimizar cada gota de agua empleada." },
-        { title: "Nutrición de precisión", text: "Control y ajuste de la nutrición vegetal según el estado de cada planta." },
-        { title: "Respuesta ante el estrés", text: "Seguimiento de variables ambientales y reacción temprana ante situaciones críticas, como la cobertura vegetal encargada de atrapar el CO₂ de la atmósfera y convertirlo en nitrógeno para la planta." },
-        { title: "Decisiones basadas en datos", text: "Menos errores operativos gracias a una digitalización guiada por información en tiempo real. Nos anticipamos a los problemas y maximizamos la producción." },
+        {
+          title: "Monitorización en tiempo real",
+          text: "Sensores que miden las necesidades reales de cada cultivo, parcela a parcela.",
+        },
+        {
+          title: "Riego automatizado",
+          text: "Ajuste continuo del riego para optimizar cada gota de agua empleada.",
+        },
+        {
+          title: "Nutrición de precisión",
+          text: "Control y ajuste de la nutrición vegetal según el estado de cada planta.",
+        },
+        {
+          title: "Respuesta ante el estrés",
+          text: "Seguimiento de variables ambientales y reacción temprana ante situaciones críticas, como la cobertura vegetal encargada de atrapar el CO₂ de la atmósfera y convertirlo en nitrógeno para la planta.",
+        },
+        {
+          title: "Decisiones basadas en datos",
+          text: "Menos errores operativos gracias a una digitalización guiada por información en tiempo real. Nos anticipamos a los problemas y maximizamos la producción.",
+        },
       ],
     },
     certifications: {
       eyebrow: "Garantías",
       title: "Certificaciones que avalan cada hectárea",
       certs: [
-        { name: "Sohiscert", text: "Respaldo al cumplimiento de los requisitos de la producción ecológica." },
-        { name: "GLOBALG.A.P.", text: "Referencia internacional en buenas prácticas agrícolas, seguridad alimentaria y gestión de la explotación." },
-        { name: "GRASP", text: "Integración de criterios sociales y laborales dentro de la gestión de la finca." },
-        { name: "SPRING", text: "Atención especial a la gestión responsable y eficiente del agua." },
+        {
+          name: "Sohiscert",
+          text: "Respaldo al cumplimiento de los requisitos de la producción ecológica.",
+        },
+        {
+          name: "GLOBALG.A.P.",
+          text: "Referencia internacional en buenas prácticas agrícolas, seguridad alimentaria y gestión de la explotación.",
+        },
+        {
+          name: "GRASP",
+          text: "Integración de criterios sociales y laborales dentro de la gestión de la finca.",
+        },
+        {
+          name: "SPRING",
+          text: "Atención especial a la gestión responsable y eficiente del agua.",
+        },
       ],
     },
     environment: {
@@ -157,23 +259,33 @@ export const translations = {
       text: "Riego tecnificado, sensorización y sistemas de protección del cultivo reducen el consumo de agua hasta niveles técnicamente optimizados. La agricultura regenerativa mejora, además, la salud del suelo y favorece el almacenamiento de carbono en el propio ecosistema agrícola. Nuestro compromiso no se limita a «contaminar menos»: perseguimos conservar los recursos, regenerar el suelo y aumentar la biodiversidad mientras producimos alimentos de calidad.",
       stats: [
         { value: "50.000+", label: "árboles en masa forestal, fijando CO₂" },
-        { value: "Riego de precisión", label: "sensorización que ajusta el agua a la necesidad real" },
-        { value: "Control biológico", label: "fauna auxiliar para el manejo natural de plagas" },
+        {
+          value: "Riego de precisión",
+          label: "sensorización que ajusta el agua a la necesidad real",
+        },
+        {
+          value: "Control biológico",
+          label: "fauna auxiliar para el manejo natural de plagas",
+        },
       ],
       galleryAlt: [
         "Abeja polinizando una flor en la finca",
+        "Flor de granado completamente abierta, en primer plano",
         "Insecto auxiliar para el control biológico de plagas",
         "Fauna auxiliar utilizada en el control biológico",
+        "Flor de granado en primer plano, a punto de abrir",
       ],
     },
     contact: {
       eyebrow: "Contacto",
       title: "Hablemos de granada, mandarina y aceituna",
-      text: "¿Eres importador, distribuidor o simplemente quieres saber más sobre el proyecto Agromonte? Escríbenos y te responderemos lo antes posible.",
+      text: "¿Eres exportador, distribuidor o simplemente quieres saber más sobre el proyecto Agromonte? Escríbenos y te responderemos lo antes posible.",
       metaExplotacionLabel: "Explotación",
-      metaExplotacionValue: "160+ hectáreas · agricultura regenerativa",
+      metaExplotacionValue:
+        "160+ hectáreas · agricultura regenerativa y ecológica",
       metaProductosLabel: "Productos",
-      metaProductosValue: "Granada ecológica · Mandarina Nadorcott · Aceituna Manzanilla",
+      metaProductosValue:
+        "Granada ecológica · Mandarina Nadorcott · Aceituna Manzanilla · Hortícolas",
       formName: "Nombre",
       formEmail: "Email",
       formSubject: "Asunto",
@@ -182,12 +294,21 @@ export const translations = {
       submitIdle: "Enviar mensaje",
       submitSending: "Enviando…",
       statusOk: "Gracias, hemos recibido tu mensaje. Te responderemos pronto.",
-      statusError: "No se ha podido enviar el mensaje. Vuelve a intentarlo o escríbenos directamente a nuestro email.",
+      statusError:
+        "No se ha podido enviar el mensaje. Vuelve a intentarlo o escríbenos directamente a nuestro email.",
     },
     footer: {
       tagline: "Producir hoy, cuidando el mañana.",
-      links: { proyecto: "Proyecto", granada: "Granada", mandarina: "Mandarina", oliva: "Aceituna", tecnologia: "Tecnología", contacto: "Contacto" },
-      copy: (year) => `© ${year} Agromonte · Agricultura regenerativa, ecológica y tecnológica.`,
+      links: {
+        proyecto: "Proyecto",
+        granada: "Granada",
+        mandarina: "Mandarina",
+        oliva: "Aceituna",
+        tecnologia: "Tecnología",
+        contacto: "Contacto",
+      },
+      copy: (year) =>
+        `© ${year} Agromonte · Agricultura regenerativa, ecológica y tecnológica.`,
     },
   },
 
@@ -195,7 +316,7 @@ export const translations = {
     hero: {
       eyebrow: "Regenerative · Organic · Technological Agriculture",
       tagline: "Growing today, caring for tomorrow.",
-      desc: "Over 160 hectares where pomegranate, Nadorcott mandarin and Manzanilla olive grow under one principle: profitability and land regeneration reinforce each other, they don't compete. We work alongside the environment in one of the most iconic landscapes in all of Europe, the Guadalquivir valley next to the Doñana nature reserve.",
+      desc: "Over 160 hectares where pomegranate, Nadorcott mandarin and Manzanilla olive grow under one principle: profitability and land regeneration reinforce each other, they don't compete. We work alongside the environment in one of the most iconic landscapes in all of Europe, the Guadalquivir valley next to the Doñana marshes.",
       ctaPrimary: "Discover the project",
       ctaSecondary: "Get in touch",
       scroll: "Scroll",
@@ -236,29 +357,68 @@ export const translations = {
         "Pomegranates are rich in phenolic compounds and polyphenols — including anthocyanins — as well as vitamin C and fibre; the fruit is drawing growing consumer interest for its antioxidant and anti-cancer properties.",
       ],
       varieties: [
-        { name: "Acco", text: "Early ripening, intense red skin and balanced flavour." },
-        { name: "Wonderful", text: "Internationally renowned, large size, juiciness and abundant phenolic compounds." },
+        {
+          name: "Acco",
+          text: "Early ripening, intense red skin and balanced flavour.",
+        },
+        {
+          name: "Wonderful",
+          text: "Internationally renowned, large size, juiciness and abundant phenolic compounds.",
+        },
       ],
       stats: [
         { value: "25,000+", label: "organic pomegranate trees" },
         { value: "Acco · Wonderful", label: "two complementary varieties" },
-        { value: "100%", label: "our own tunnel system" },
+        { value: "100%", label: "unique tunnel system, creating a microclimate" },
       ],
       gallery: {
         eyebrow: "In pictures",
         title: "Pomegranate, from blossom to growing tunnel",
         photos: [
-          { src: "sistema-de-tuneles-granadas-plano-general.jpeg", alt: "Tunnel system over the pomegranate trees, wide shot" },
-          { src: "sistema-de-tuneles-granadas-plano-medio.jpeg", alt: "Tunnel system over the pomegranate trees, medium shot" },
-          { src: "granadas-primer-plano.jpeg", alt: "Organic pomegranates in close-up" },
-          { src: "granadas-primer-plano-2.jpeg", alt: "Detail of ripe pomegranates on the tree" },
-          { src: "granadas-plano-medio.jpeg", alt: "Pomegranate trees, medium shot" },
-          { src: "granadas-plano-medio-v2.jpeg", alt: "Organic pomegranate trees on the estate" },
-          { src: "granadas-plano-medio-v3.jpeg", alt: "Row of pomegranate trees in production" },
-          { src: "una-granada-primer-plano.jpeg", alt: "A whole pomegranate in close-up" },
-          { src: "una-granada-abierta-primer-plano.jpeg", alt: "An open pomegranate showing its arils" },
-          { src: "una-granada-abierta-primer-plano-v2.jpeg", alt: "Detail of pomegranate arils" },
-          { src: "una-granada-abierta-primer-plano-v3.jpeg", alt: "Open pomegranate, close-up" },
+          {
+            src: "sistema-de-tuneles-granadas-plano-general.jpeg",
+            alt: "Tunnel system over the pomegranate trees, wide shot",
+          },
+          {
+            src: "sistema-de-tuneles-granadas-plano-medio.jpeg",
+            alt: "Tunnel system over the pomegranate trees, medium shot",
+          },
+          {
+            src: "granadas-primer-plano.jpeg",
+            alt: "Organic pomegranates in close-up",
+          },
+          {
+            src: "granadas-primer-plano-2.jpeg",
+            alt: "Detail of ripe pomegranates on the tree",
+          },
+          {
+            src: "granadas-plano-medio.jpeg",
+            alt: "Pomegranate trees, medium shot",
+          },
+          {
+            src: "granadas-plano-medio-v2.jpeg",
+            alt: "Organic pomegranate trees on the estate",
+          },
+          {
+            src: "granadas-plano-medio-v3.jpeg",
+            alt: "Row of pomegranate trees in production",
+          },
+          {
+            src: "una-granada-primer-plano.jpeg",
+            alt: "A whole pomegranate in close-up",
+          },
+          {
+            src: "una-granada-abierta-primer-plano.jpeg",
+            alt: "An open pomegranate showing its arils",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v2.jpeg",
+            alt: "Detail of pomegranate arils",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v3.jpeg",
+            alt: "Open pomegranate, close-up",
+          },
         ],
       },
     },
@@ -272,7 +432,7 @@ export const translations = {
         "It's grown with the same technology that optimises water, nutrition and resources, applying regenerative agriculture that cares for the surrounding environment.",
       ],
       stats: [
-        { value: "20,000+", label: "Nadorcott mandarin trees" },
+        { value: "20,000+", label: "Nadorcott mandarin trees, a protected variety" },
         { value: "Late", label: "ripening window" },
         { value: "Europe", label: "main export market" },
       ],
@@ -280,13 +440,31 @@ export const translations = {
         eyebrow: "In pictures",
         title: "Nadorcott Mandarin",
         photos: [
-          { src: "mandarinas-primer-plano.jpeg", alt: "Nadorcott mandarins in close-up" },
-          { src: "mandarinas-primer-plano-2.jpeg", alt: "Detail of mandarins on the tree" },
-          { src: "mandarinas-primer-plano-3.jpeg", alt: "Ripe Nadorcott mandarins" },
-          { src: "mandarinas-primer-plano-v2.jpeg", alt: "Cluster of mandarins in close-up" },
-          { src: "mandarinas-plano-medio.jpeg", alt: "Mandarin trees, medium shot" },
+          {
+            src: "mandarinas-primer-plano.jpeg",
+            alt: "Nadorcott mandarins in close-up",
+          },
+          {
+            src: "mandarinas-primer-plano-2.jpeg",
+            alt: "Detail of mandarins on the tree",
+          },
+          {
+            src: "mandarinas-primer-plano-3.jpeg",
+            alt: "Ripe Nadorcott mandarins",
+          },
+          {
+            src: "mandarinas-primer-plano-v2.jpeg",
+            alt: "Cluster of mandarins in close-up",
+          },
+          {
+            src: "mandarinas-plano-medio.jpeg",
+            alt: "Mandarin trees, medium shot",
+          },
           { src: "mandarinas-plano-medio-v2.jpeg", alt: "Mandarin plantation" },
-          { src: "mandarinas-plano-aereo.jpeg", alt: "Aerial view of the mandarin plantation" },
+          {
+            src: "mandarinas-plano-aereo.jpeg",
+            alt: "Aerial view of the mandarin plantation",
+          },
         ],
       },
     },
@@ -308,10 +486,22 @@ export const translations = {
         eyebrow: "In pictures",
         title: "The Manzanilla olive",
         photos: [
-          { src: "olivos-primer-plano.jpeg", alt: "Manzanilla olives in close-up" },
-          { src: "olivos-plano-general.jpeg", alt: "Manzanilla olive grove, wide shot" },
-          { src: "olivos-plano-general-v2.jpeg", alt: "Rows of the Manzanilla olive grove" },
-          { src: "olivos-plano-general-v3.jpeg", alt: "The Manzanilla olive grove in depth" },
+          {
+            src: "olivos-primer-plano.jpeg",
+            alt: "Manzanilla olives in close-up",
+          },
+          {
+            src: "olivos-plano-general.jpeg",
+            alt: "Manzanilla olive grove, wide shot",
+          },
+          {
+            src: "olivos-plano-general-v2.jpeg",
+            alt: "Rows of the Manzanilla olive grove",
+          },
+          {
+            src: "olivos-plano-general-v3.jpeg",
+            alt: "The Manzanilla olive grove in depth",
+          },
         ],
       },
     },
@@ -320,46 +510,82 @@ export const translations = {
       title: "Precision agriculture in service of the crop",
       lead: "Automation makes it possible to coordinate irrigation, nutrition and environmental conditions across the whole estate. Technology doesn't replace farming know-how, it strengthens it.",
       features: [
-        { title: "Real-time monitoring", text: "Sensors that measure each crop's real needs, plot by plot." },
-        { title: "Automated irrigation", text: "Continuous adjustment of irrigation to optimise every drop of water used." },
-        { title: "Precision nutrition", text: "Control and adjustment of plant nutrition based on the state of each plant." },
-        { title: "Response to stress", text: "Monitoring of environmental variables and early response to critical situations, such as the cover crop that captures CO₂ from the atmosphere and converts it into nitrogen for the plant." },
-        { title: "Data-driven decisions", text: "Fewer operational errors thanks to digitalisation guided by real-time information. We stay ahead of problems and maximise production." },
+        {
+          title: "Real-time monitoring",
+          text: "Sensors that measure each crop's real needs, plot by plot.",
+        },
+        {
+          title: "Automated irrigation",
+          text: "Continuous adjustment of irrigation to optimise every drop of water used.",
+        },
+        {
+          title: "Precision nutrition",
+          text: "Control and adjustment of plant nutrition based on the state of each plant.",
+        },
+        {
+          title: "Response to stress",
+          text: "Monitoring of environmental variables and early response to critical situations, such as the cover crop that captures CO₂ from the atmosphere and converts it into nitrogen for the plant.",
+        },
+        {
+          title: "Data-driven decisions",
+          text: "Fewer operational errors thanks to digitalisation guided by real-time information. We stay ahead of problems and maximise production.",
+        },
       ],
     },
     certifications: {
       eyebrow: "Guarantees",
       title: "Certifications that back every hectare",
       certs: [
-        { name: "Sohiscert", text: "Backing for compliance with organic production requirements." },
-        { name: "GLOBALG.A.P.", text: "International benchmark for good agricultural practice, food safety and farm management." },
-        { name: "GRASP", text: "Integration of social and labour criteria into farm management." },
-        { name: "SPRING", text: "Special attention to responsible, efficient water management." },
+        {
+          name: "Sohiscert",
+          text: "Backing for compliance with organic production requirements.",
+        },
+        {
+          name: "GLOBALG.A.P.",
+          text: "International benchmark for good agricultural practice, food safety and farm management.",
+        },
+        {
+          name: "GRASP",
+          text: "Integration of social and labour criteria into farm management.",
+        },
+        {
+          name: "SPRING",
+          text: "Special attention to responsible, efficient water management.",
+        },
       ],
     },
     environment: {
       eyebrow: "Water & carbon footprint",
       title: "Caring for the land isn't an extra: it's the method",
-      text: "Precision irrigation, sensor technology and crop protection systems cut water use to technically optimised levels. Regenerative agriculture also improves soil health and helps store carbon within the farm's own ecosystem. Our commitment goes beyond \"polluting less\": we aim to conserve resources, regenerate the soil and increase biodiversity while producing quality food.",
+      text: 'Precision irrigation, sensor technology and crop protection systems cut water use to technically optimised levels. Regenerative agriculture also improves soil health and helps store carbon within the farm\'s own ecosystem. Our commitment goes beyond "polluting less": we aim to conserve resources, regenerate the soil and increase biodiversity while producing quality food.',
       stats: [
         { value: "50,000+", label: "trees in forest cover, capturing CO₂" },
-        { value: "Precision irrigation", label: "sensor technology that matches water to real need" },
-        { value: "Biological control", label: "beneficial fauna for natural pest management" },
+        {
+          value: "Precision irrigation",
+          label: "sensor technology that matches water to real need",
+        },
+        {
+          value: "Biological control",
+          label: "beneficial fauna for natural pest management",
+        },
       ],
       galleryAlt: [
         "A bee pollinating a flower on the estate",
+        "A pomegranate blossom fully open, in close-up",
         "Beneficial insect used for biological pest control",
         "Beneficial fauna used in biological control",
+        "A pomegranate blossom in close-up, about to open",
       ],
     },
     contact: {
       eyebrow: "Contact",
       title: "Let's talk pomegranate, mandarin or olive",
-      text: "Are you an importer, a distributor, or simply want to know more about the Agromonte project? Write to us and we'll get back to you as soon as possible.",
+      text: "Are you an exporter, a distributor, or simply want to know more about the Agromonte project? Write to us and we'll get back to you as soon as possible.",
       metaExplotacionLabel: "Estate",
-      metaExplotacionValue: "160+ hectares · regenerative agriculture",
+      metaExplotacionValue: "160+ hectares · regenerative, organic agriculture",
       metaProductosLabel: "Products",
-      metaProductosValue: "Organic pomegranate · Nadorcott mandarin · Manzanilla olive",
+      metaProductosValue:
+        "Organic pomegranate · Nadorcott mandarin · Manzanilla olive · Horticultural crops",
       formName: "Name",
       formEmail: "Email",
       formSubject: "Subject",
@@ -367,13 +593,23 @@ export const translations = {
       formMessage: "Message",
       submitIdle: "Send message",
       submitSending: "Sending…",
-      statusOk: "Thank you, we've received your message. We'll get back to you soon.",
-      statusError: "Your message couldn't be sent. Please try again or email us directly.",
+      statusOk:
+        "Thank you, we've received your message. We'll get back to you soon.",
+      statusError:
+        "Your message couldn't be sent. Please try again or email us directly.",
     },
     footer: {
       tagline: "Growing today, caring for tomorrow.",
-      links: { proyecto: "Project", granada: "Pomegranate", mandarina: "Mandarin", oliva: "Olive", tecnologia: "Technology", contacto: "Contact" },
-      copy: (year) => `© ${year} Agromonte · Regenerative, organic and technological agriculture.`,
+      links: {
+        proyecto: "Project",
+        granada: "Pomegranate",
+        mandarina: "Mandarin",
+        oliva: "Olive",
+        tecnologia: "Technology",
+        contacto: "Contact",
+      },
+      copy: (year) =>
+        `© ${year} Agromonte · Regenerative, organic and technological agriculture.`,
     },
   },
 
@@ -381,7 +617,7 @@ export const translations = {
     hero: {
       eyebrow: "Agriculture régénérative · Biologique · Technologique",
       tagline: "Produire aujourd'hui, en prenant soin de demain.",
-      desc: "Plus de 160 hectares où la grenade, la mandarine Nadorcott et l'olive Manzanilla poussent selon un même principe : la rentabilité et la régénération du territoire se renforcent, elles ne s'opposent pas. Nous agissons au cœur de l'un des paysages les plus emblématiques d'Europe, la vallée du Guadalquivir, juste à côté du parc de Doñana.",
+      desc: "Plus de 160 hectares où la grenade, la mandarine Nadorcott et l'olive Manzanilla poussent selon un même principe : la rentabilité et la régénération du territoire se renforcent, elles ne s'opposent pas. Nous agissons au cœur de l'un des paysages les plus emblématiques d'Europe, la vallée du Guadalquivir, juste à côté des marais de Doñana.",
       ctaPrimary: "Découvrir le projet",
       ctaSecondary: "Contactez-nous",
       scroll: "Défiler",
@@ -422,29 +658,65 @@ export const translations = {
         "Les grenades sont riches en composés phénoliques et en polyphénols — dont des anthocyanes — ainsi qu'en vitamine C et en fibres ; le fruit suscite un intérêt croissant des consommateurs pour ses propriétés antioxydantes et anticancéreuses.",
       ],
       varieties: [
-        { name: "Acco", text: "Maturation précoce, peau rouge intense et saveur équilibrée." },
-        { name: "Wonderful", text: "Reconnaissance internationale, grande taille, jutosité et forte teneur en composés phénoliques." },
+        {
+          name: "Acco",
+          text: "Maturation précoce, peau rouge intense et saveur équilibrée.",
+        },
+        {
+          name: "Wonderful",
+          text: "Reconnaissance internationale, grande taille, jutosité et forte teneur en composés phénoliques.",
+        },
       ],
       stats: [
         { value: "25 000+", label: "grenadiers biologiques" },
         { value: "Acco · Wonderful", label: "deux variétés complémentaires" },
-        { value: "100 %", label: "système de tunnels propre à Agromonte" },
+        { value: "100 %", label: "système de tunnels unique, créant un microclimat" },
       ],
       gallery: {
         eyebrow: "En images",
         title: "La grenade, de la fleur au tunnel de culture",
         photos: [
-          { src: "sistema-de-tuneles-granadas-plano-general.jpeg", alt: "Système de tunnels au-dessus des grenadiers, vue d'ensemble" },
-          { src: "sistema-de-tuneles-granadas-plano-medio.jpeg", alt: "Système de tunnels au-dessus des grenadiers, plan moyen" },
-          { src: "granadas-primer-plano.jpeg", alt: "Grenades biologiques en gros plan" },
-          { src: "granadas-primer-plano-2.jpeg", alt: "Détail de grenades mûres sur l'arbre" },
+          {
+            src: "sistema-de-tuneles-granadas-plano-general.jpeg",
+            alt: "Système de tunnels au-dessus des grenadiers, vue d'ensemble",
+          },
+          {
+            src: "sistema-de-tuneles-granadas-plano-medio.jpeg",
+            alt: "Système de tunnels au-dessus des grenadiers, plan moyen",
+          },
+          {
+            src: "granadas-primer-plano.jpeg",
+            alt: "Grenades biologiques en gros plan",
+          },
+          {
+            src: "granadas-primer-plano-2.jpeg",
+            alt: "Détail de grenades mûres sur l'arbre",
+          },
           { src: "granadas-plano-medio.jpeg", alt: "Grenadiers, plan moyen" },
-          { src: "granadas-plano-medio-v2.jpeg", alt: "Grenadiers biologiques de l'exploitation" },
-          { src: "granadas-plano-medio-v3.jpeg", alt: "Rangée de grenadiers en production" },
-          { src: "una-granada-primer-plano.jpeg", alt: "Une grenade entière en gros plan" },
-          { src: "una-granada-abierta-primer-plano.jpeg", alt: "Une grenade ouverte laissant voir ses arilles" },
-          { src: "una-granada-abierta-primer-plano-v2.jpeg", alt: "Détail des arilles de la grenade" },
-          { src: "una-granada-abierta-primer-plano-v3.jpeg", alt: "Grenade ouverte, gros plan" },
+          {
+            src: "granadas-plano-medio-v2.jpeg",
+            alt: "Grenadiers biologiques de l'exploitation",
+          },
+          {
+            src: "granadas-plano-medio-v3.jpeg",
+            alt: "Rangée de grenadiers en production",
+          },
+          {
+            src: "una-granada-primer-plano.jpeg",
+            alt: "Une grenade entière en gros plan",
+          },
+          {
+            src: "una-granada-abierta-primer-plano.jpeg",
+            alt: "Une grenade ouverte laissant voir ses arilles",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v2.jpeg",
+            alt: "Détail des arilles de la grenade",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v3.jpeg",
+            alt: "Grenade ouverte, gros plan",
+          },
         ],
       },
     },
@@ -458,7 +730,7 @@ export const translations = {
         "Elle est cultivée avec le même système technologique qui optimise l'eau, la nutrition et les ressources, dans le cadre d'une agriculture régénérative qui préserve le milieu environnant.",
       ],
       stats: [
-        { value: "20 000+", label: "mandariniers Nadorcott" },
+        { value: "20 000+", label: "mandariniers Nadorcott, variété protégée" },
         { value: "Tardive", label: "fenêtre de maturation" },
         { value: "Europe", label: "principal marché d'exportation" },
       ],
@@ -466,13 +738,34 @@ export const translations = {
         eyebrow: "En images",
         title: "Mandarine Nadorcott",
         photos: [
-          { src: "mandarinas-primer-plano.jpeg", alt: "Mandarines Nadorcott en gros plan" },
-          { src: "mandarinas-primer-plano-2.jpeg", alt: "Détail de mandarines sur l'arbre" },
-          { src: "mandarinas-primer-plano-3.jpeg", alt: "Mandarines Nadorcott mûres" },
-          { src: "mandarinas-primer-plano-v2.jpeg", alt: "Grappe de mandarines en gros plan" },
-          { src: "mandarinas-plano-medio.jpeg", alt: "Mandariniers, plan moyen" },
-          { src: "mandarinas-plano-medio-v2.jpeg", alt: "Plantation de mandariniers" },
-          { src: "mandarinas-plano-aereo.jpeg", alt: "Vue aérienne de la plantation de mandariniers" },
+          {
+            src: "mandarinas-primer-plano.jpeg",
+            alt: "Mandarines Nadorcott en gros plan",
+          },
+          {
+            src: "mandarinas-primer-plano-2.jpeg",
+            alt: "Détail de mandarines sur l'arbre",
+          },
+          {
+            src: "mandarinas-primer-plano-3.jpeg",
+            alt: "Mandarines Nadorcott mûres",
+          },
+          {
+            src: "mandarinas-primer-plano-v2.jpeg",
+            alt: "Grappe de mandarines en gros plan",
+          },
+          {
+            src: "mandarinas-plano-medio.jpeg",
+            alt: "Mandariniers, plan moyen",
+          },
+          {
+            src: "mandarinas-plano-medio-v2.jpeg",
+            alt: "Plantation de mandariniers",
+          },
+          {
+            src: "mandarinas-plano-aereo.jpeg",
+            alt: "Vue aérienne de la plantation de mandariniers",
+          },
         ],
       },
     },
@@ -487,17 +780,32 @@ export const translations = {
       ],
       stats: [
         { value: "5 000", label: "oliviers Manzanilla" },
-        { value: "~36 %", label: "de la production espagnole d'olive de table" },
+        {
+          value: "~36 %",
+          label: "de la production espagnole d'olive de table",
+        },
         { value: "Espagne", label: "premier exportateur mondial" },
       ],
       gallery: {
         eyebrow: "En images",
         title: "L'olive Manzanilla",
         photos: [
-          { src: "olivos-primer-plano.jpeg", alt: "Olives Manzanilla en gros plan" },
-          { src: "olivos-plano-general.jpeg", alt: "Oliveraie Manzanilla, vue d'ensemble" },
-          { src: "olivos-plano-general-v2.jpeg", alt: "Rangées de l'oliveraie Manzanilla" },
-          { src: "olivos-plano-general-v3.jpeg", alt: "L'oliveraie Manzanilla vue en profondeur" },
+          {
+            src: "olivos-primer-plano.jpeg",
+            alt: "Olives Manzanilla en gros plan",
+          },
+          {
+            src: "olivos-plano-general.jpeg",
+            alt: "Oliveraie Manzanilla, vue d'ensemble",
+          },
+          {
+            src: "olivos-plano-general-v2.jpeg",
+            alt: "Rangées de l'oliveraie Manzanilla",
+          },
+          {
+            src: "olivos-plano-general-v3.jpeg",
+            alt: "L'oliveraie Manzanilla vue en profondeur",
+          },
         ],
       },
     },
@@ -506,46 +814,86 @@ export const translations = {
       title: "L'agriculture de précision au service de la culture",
       lead: "La domotique permet de gérer de façon coordonnée l'irrigation, la nutrition et les conditions environnementales de toute l'exploitation. La technologie ne remplace pas le savoir-faire agricole, elle le renforce.",
       features: [
-        { title: "Suivi en temps réel", text: "Des capteurs qui mesurent les besoins réels de chaque culture, parcelle par parcelle." },
-        { title: "Irrigation automatisée", text: "Ajustement continu de l'irrigation pour optimiser chaque goutte d'eau utilisée." },
-        { title: "Nutrition de précision", text: "Contrôle et ajustement de la nutrition végétale selon l'état de chaque plante." },
-        { title: "Réponse au stress", text: "Suivi des variables environnementales et réaction rapide face aux situations critiques, comme le couvert végétal chargé de capter le CO₂ de l'atmosphère et de le convertir en azote pour la plante." },
-        { title: "Décisions fondées sur les données", text: "Moins d'erreurs opérationnelles grâce à une digitalisation guidée par l'information en temps réel. Nous anticipons les problèmes et maximisons la production." },
+        {
+          title: "Suivi en temps réel",
+          text: "Des capteurs qui mesurent les besoins réels de chaque culture, parcelle par parcelle.",
+        },
+        {
+          title: "Irrigation automatisée",
+          text: "Ajustement continu de l'irrigation pour optimiser chaque goutte d'eau utilisée.",
+        },
+        {
+          title: "Nutrition de précision",
+          text: "Contrôle et ajustement de la nutrition végétale selon l'état de chaque plante.",
+        },
+        {
+          title: "Réponse au stress",
+          text: "Suivi des variables environnementales et réaction rapide face aux situations critiques, comme le couvert végétal chargé de capter le CO₂ de l'atmosphère et de le convertir en azote pour la plante.",
+        },
+        {
+          title: "Décisions fondées sur les données",
+          text: "Moins d'erreurs opérationnelles grâce à une digitalisation guidée par l'information en temps réel. Nous anticipons les problèmes et maximisons la production.",
+        },
       ],
     },
     certifications: {
       eyebrow: "Garanties",
       title: "Des certifications qui engagent chaque hectare",
       certs: [
-        { name: "Sohiscert", text: "Garantie du respect des exigences de la production biologique." },
-        { name: "GLOBALG.A.P.", text: "Référence internationale en bonnes pratiques agricoles, sécurité alimentaire et gestion de l'exploitation." },
-        { name: "GRASP", text: "Intégration de critères sociaux et du travail dans la gestion de l'exploitation." },
-        { name: "SPRING", text: "Attention particulière à une gestion responsable et efficace de l'eau." },
+        {
+          name: "Sohiscert",
+          text: "Garantie du respect des exigences de la production biologique.",
+        },
+        {
+          name: "GLOBALG.A.P.",
+          text: "Référence internationale en bonnes pratiques agricoles, sécurité alimentaire et gestion de l'exploitation.",
+        },
+        {
+          name: "GRASP",
+          text: "Intégration de critères sociaux et du travail dans la gestion de l'exploitation.",
+        },
+        {
+          name: "SPRING",
+          text: "Attention particulière à une gestion responsable et efficace de l'eau.",
+        },
       ],
     },
     environment: {
       eyebrow: "Empreinte hydrique & empreinte carbone",
-      title: "Prendre soin du milieu n'est pas un supplément : c'est la méthode",
+      title:
+        "Prendre soin du milieu n'est pas un supplément : c'est la méthode",
       text: "L'irrigation de précision, la capture de données et les systèmes de protection des cultures réduisent la consommation d'eau à des niveaux techniquement optimisés. L'agriculture régénérative améliore en outre la santé du sol et favorise le stockage du carbone au sein même de l'écosystème agricole. Notre engagement ne se limite pas à « polluer moins » : nous cherchons à préserver les ressources, régénérer le sol et accroître la biodiversité tout en produisant des aliments de qualité.",
       stats: [
-        { value: "50 000+", label: "arbres en masse forestière, captant le CO₂" },
-        { value: "Irrigation de précision", label: "capture de données ajustant l'eau au besoin réel" },
-        { value: "Lutte biologique", label: "faune auxiliaire pour une gestion naturelle des nuisibles" },
+        {
+          value: "50 000+",
+          label: "arbres en masse forestière, captant le CO₂",
+        },
+        {
+          value: "Irrigation de précision",
+          label: "capture de données ajustant l'eau au besoin réel",
+        },
+        {
+          value: "Lutte biologique",
+          label: "faune auxiliaire pour une gestion naturelle des nuisibles",
+        },
       ],
       galleryAlt: [
         "Une abeille butinant une fleur sur l'exploitation",
+        "Une fleur de grenadier complètement épanouie, en gros plan",
         "Insecte auxiliaire pour la lutte biologique contre les nuisibles",
         "Faune auxiliaire utilisée dans la lutte biologique",
+        "Une fleur de grenadier en gros plan, sur le point de s'ouvrir",
       ],
     },
     contact: {
       eyebrow: "Contact",
       title: "Parlons grenade, mandarine ou olive",
-      text: "Vous êtes importateur, distributeur, ou vous souhaitez simplement en savoir plus sur le projet Agromonte ? Écrivez-nous, nous vous répondrons au plus vite.",
+      text: "Vous êtes exportateur, distributeur, ou vous souhaitez simplement en savoir plus sur le projet Agromonte ? Écrivez-nous, nous vous répondrons au plus vite.",
       metaExplotacionLabel: "Exploitation",
-      metaExplotacionValue: "160+ hectares · agriculture régénérative",
+      metaExplotacionValue: "160+ hectares · agriculture régénérative et biologique",
       metaProductosLabel: "Produits",
-      metaProductosValue: "Grenade biologique · Mandarine Nadorcott · Olive Manzanilla",
+      metaProductosValue:
+        "Grenade biologique · Mandarine Nadorcott · Olive Manzanilla · Cultures maraîchères",
       formName: "Nom",
       formEmail: "Email",
       formSubject: "Objet",
@@ -553,13 +901,23 @@ export const translations = {
       formMessage: "Message",
       submitIdle: "Envoyer le message",
       submitSending: "Envoi en cours…",
-      statusOk: "Merci, nous avons bien reçu votre message. Nous vous répondrons rapidement.",
-      statusError: "Le message n'a pas pu être envoyé. Veuillez réessayer ou nous écrire directement par email.",
+      statusOk:
+        "Merci, nous avons bien reçu votre message. Nous vous répondrons rapidement.",
+      statusError:
+        "Le message n'a pas pu être envoyé. Veuillez réessayer ou nous écrire directement par email.",
     },
     footer: {
       tagline: "Produire aujourd'hui, en prenant soin de demain.",
-      links: { proyecto: "Projet", granada: "Grenade", mandarina: "Mandarine", oliva: "Olive", tecnologia: "Technologie", contacto: "Contact" },
-      copy: (year) => `© ${year} Agromonte · Agriculture régénérative, biologique et technologique.`,
+      links: {
+        proyecto: "Projet",
+        granada: "Grenade",
+        mandarina: "Mandarine",
+        oliva: "Olive",
+        tecnologia: "Technologie",
+        contacto: "Contact",
+      },
+      copy: (year) =>
+        `© ${year} Agromonte · Agriculture régénérative, biologique et technologique.`,
     },
   },
 };
