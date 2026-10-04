@@ -1,0 +1,94 @@
+.tech {
+  position: relative;
+  color: var(--c-cream);
+  overflow: hidden;
+}
+
+.tech-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.tech-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(14, 26, 16, 0.92) 0%, rgba(14, 26, 16, 0.88) 45%, rgba(14, 26, 16, 0.96) 100%);
+}
+
+.tech-content {
+  position: relative;
+  z-index: 1;
+}
+
+.tech-title {
+  margin-top: 16px;
+  font-size: clamp(2.1rem, 4.4vw, 3.1rem);
+  max-width: 20ch;
+}
+
+.tech-lead {
+  margin-top: 20px;
+  max-width: 60ch;
+  color: rgba(246, 242, 231, 0.8);
+  font-size: 1.05rem;
+}
+
+.tech-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: rgba(246, 242, 231, 0.14);
+  border: 1px solid rgba(246, 242, 231, 0.14);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.tech-feature {
+  background: rgba(14, 26, 16, 0.65);
+  padding: 30px 22px;
+  transition: background 0.35s ease;
+}
+
+.tech-feature:hover {
+  background: rgba(246, 242, 231, 0.07);
+}
+
+.tech-feature-index {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--c-gold);
+  letter-spacing: 0.1em;
+}
+
+.tech-feature h3 {
+  margin-top: 14px;
+  font-size: 1.05rem;
+  color: var(--c-cream);
+}
+
+.tech-feature p {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: rgba(246, 242, 231, 0.68);
+}
+
+@media (max-width: 1080px) {
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,129 @@
+.contact {
+  background: var(--c-green-900);
+  color: var(--c-cream);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(32px, 6vw, 80px);
+}
+
+.contact-title {
+  margin-top: 16px;
+  font-size: clamp(2.1rem, 4.4vw, 3rem);
+  max-width: 16ch;
+}
+
+.contact-text {
+  margin-top: 20px;
+  color: rgba(246, 242, 231, 0.78);
+  max-width: 44ch;
+}
+
+.contact-meta {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(246, 242, 231, 0.18);
+  font-size: 0.92rem;
+  color: rgba(246, 242, 231, 0.85);
+}
+
+.contact-meta-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--c-gold);
+}
+
+.contact-form {
+  background: rgba(246, 242, 231, 0.04);
+  border: 1px solid rgba(246, 242, 231, 0.14);
+  border-radius: 22px;
+  padding: clamp(24px, 4vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-field label {
+  font-size: 0.82rem;
+  color: rgba(246, 242, 231, 0.7);
+}
+
+.contact-field input,
+.contact-field textarea {
+  background: rgba(14, 26, 16, 0.4);
+  border: 1px solid rgba(246, 242, 231, 0.22);
+  border-radius: 10px;
+  padding: 13px 14px;
+  color: var(--c-cream);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--c-gold);
+  background: rgba(14, 26, 16, 0.6);
+}
+
+.contact-submit {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.contact-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.contact-status {
+  font-size: 0.88rem;
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.contact-status--ok {
+  background: rgba(138, 154, 74, 0.2);
+  color: var(--c-olive-light);
+}
+
+.contact-status--error {
+  background: rgba(178, 58, 58, 0.18);
+  color: var(--c-pomegranate-light);
+}
+
+@media (max-width: 880px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr;
+  }
+}
