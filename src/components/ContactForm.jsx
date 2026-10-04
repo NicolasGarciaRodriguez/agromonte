@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Reveal from "./Reveal.jsx";
+import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./ContactForm.css";
 
 // Formspree (https://formspree.io) permite recibir este formulario por email
@@ -10,6 +11,7 @@ const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID || "YOUR_FORM_ID";
 const ENDPOINT = `https://formspree.io/f/${FORMSPREE_ID}`;
 
 export default function ContactForm() {
+  const { t } = useLanguage();
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
   async function handleSubmit(e) {
@@ -45,23 +47,21 @@ export default function ContactForm() {
     <section id="contacto" className="section contact">
       <div className="container contact-grid">
         <div className="contact-intro">
-          <Reveal as="p" className="eyebrow">Contacto</Reveal>
+          <Reveal as="p" className="eyebrow">{t.contact.eyebrow}</Reveal>
           <Reveal as="h2" delay={1} className="contact-title">
-            Hablemos de granada, mandarina u oliva
+            {t.contact.title}
           </Reveal>
           <Reveal as="p" delay={2} className="contact-text">
-            ¿Eres importador, distribuidor o simplemente quieres saber más sobre
-            el proyecto Agromonte? Escríbenos y te responderemos lo antes
-            posible.
+            {t.contact.text}
           </Reveal>
           <Reveal delay={3} className="contact-meta">
             <div>
-              <span className="contact-meta-label">Explotación</span>
-              <span>160+ hectáreas · agricultura regenerativa</span>
+              <span className="contact-meta-label">{t.contact.metaExplotacionLabel}</span>
+              <span>{t.contact.metaExplotacionValue}</span>
             </div>
             <div>
-              <span className="contact-meta-label">Productos</span>
-              <span>Granada ecológica · Mandarina Nadorcott · Oliva Manzanilla</span>
+              <span className="contact-meta-label">{t.contact.metaProductosLabel}</span>
+              <span>{t.contact.metaProductosValue}</span>
             </div>
           </Reveal>
         </div>
@@ -69,39 +69,34 @@ export default function ContactForm() {
         <Reveal as="form" delay={2} className="contact-form" onSubmit={handleSubmit}>
           <div className="contact-row">
             <div className="contact-field">
-              <label htmlFor="name">Nombre</label>
+              <label htmlFor="name">{t.contact.formName}</label>
               <input id="name" name="name" type="text" required autoComplete="name" />
             </div>
             <div className="contact-field">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t.contact.formEmail}</label>
               <input id="email" name="email" type="email" required autoComplete="email" />
             </div>
           </div>
 
           <div className="contact-field">
-            <label htmlFor="subject">Asunto</label>
-            <input id="subject" name="subject" type="text" placeholder="Ej. Distribución de granada ecológica" />
+            <label htmlFor="subject">{t.contact.formSubject}</label>
+            <input id="subject" name="subject" type="text" placeholder={t.contact.formSubjectPlaceholder} />
           </div>
 
           <div className="contact-field">
-            <label htmlFor="message">Mensaje</label>
+            <label htmlFor="message">{t.contact.formMessage}</label>
             <textarea id="message" name="message" rows="5" required />
           </div>
 
           <button type="submit" className="btn btn-primary contact-submit" disabled={status === "sending"}>
-            {status === "sending" ? "Enviando…" : "Enviar mensaje"}
+            {status === "sending" ? t.contact.submitSending : t.contact.submitIdle}
           </button>
 
           {status === "success" && (
-            <p className="contact-status contact-status--ok">
-              Gracias, hemos recibido tu mensaje. Te responderemos pronto.
-            </p>
+            <p className="contact-status contact-status--ok">{t.contact.statusOk}</p>
           )}
           {status === "error" && (
-            <p className="contact-status contact-status--error">
-              No se ha podido enviar el mensaje. Vuelve a intentarlo o escríbenos
-              directamente a nuestro email.
-            </p>
+            <p className="contact-status contact-status--error">{t.contact.statusError}</p>
           )}
         </Reveal>
       </div>

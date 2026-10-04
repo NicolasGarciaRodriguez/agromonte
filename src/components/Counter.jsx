@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function Counter({ to, duration = 1800, suffix = "", prefix = "" }) {
+export default function Counter({ to, duration = 1800, suffix = "", prefix = "", locale = "es-ES" }) {
   const [value, setValue] = useState(0);
   const ref = useRef(null);
   const started = useRef(false);
@@ -36,7 +36,7 @@ export default function Counter({ to, duration = 1800, suffix = "", prefix = "" 
   return (
     <span ref={ref}>
       {prefix}
-      {value.toLocaleString("es-ES")}
+      {value.toLocaleString(locale)}
       {suffix}
     </span>
   );

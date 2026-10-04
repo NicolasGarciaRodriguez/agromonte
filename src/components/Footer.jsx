@@ -1,26 +1,28 @@
+import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./Footer.css";
 
 export default function Footer() {
+  const { t } = useLanguage();
+  const { links } = t.footer;
+
   return (
     <footer className="footer">
       <div className="container footer-inner">
         <div>
           <span className="footer-brand">AGROMONTE</span>
-          <p className="footer-tagline">Producir hoy, cuidando el mañana.</p>
+          <p className="footer-tagline">{t.footer.tagline}</p>
         </div>
 
         <nav className="footer-links">
-          <a href="#proyecto">Proyecto</a>
-          <a href="#granada">Granada</a>
-          <a href="#mandarina">Mandarina</a>
-          <a href="#oliva">Oliva</a>
-          <a href="#tecnologia">Tecnología</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#proyecto">{links.proyecto}</a>
+          <a href="#granada">{links.granada}</a>
+          <a href="#mandarina">{links.mandarina}</a>
+          <a href="#oliva">{links.oliva}</a>
+          <a href="#tecnologia">{links.tecnologia}</a>
+          <a href="#contacto">{links.contacto}</a>
         </nav>
 
-        <p className="footer-copy">
-          © {new Date().getFullYear()} Agromonte · Agricultura regenerativa, ecológica y tecnológica.
-        </p>
+        <p className="footer-copy">{t.footer.copy(new Date().getFullYear())}</p>
       </div>
     </footer>
   );

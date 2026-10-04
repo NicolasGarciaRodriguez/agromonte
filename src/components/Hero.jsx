@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./Hero.css";
 
 export default function Hero() {
@@ -7,6 +8,7 @@ export default function Hero() {
   // ping-pong between the clip and a pre-rendered reverse of itself, so the
   // flythrough glides forward then backward with no visible seam.
   const [reversed, setReversed] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <section id="top" className="hero">
@@ -26,31 +28,29 @@ export default function Hero() {
       </div>
 
       <div className="hero-content container">
-        <p className="eyebrow hero-eyebrow">
-          Agricultura regenerativa · Ecológica · Tecnológica
-        </p>
+        <p className="eyebrow hero-eyebrow">{t.hero.eyebrow}</p>
         <h1 className="hero-title">AGROMONTE</h1>
-        <p className="hero-tagline">Producir hoy, cuidando el mañana.</p>
-        <p className="hero-desc">
-          Más de 160 hectáreas en las que la granada, la mandarina Nadorcott y la
-          aceituna Manzanilla crecen bajo un mismo principio: la rentabilidad y la
-          regeneración del territorio se refuerzan, no compiten.
-        </p>
+        <p className="hero-tagline">{t.hero.tagline}</p>
+        <p className="hero-desc">{t.hero.desc}</p>
         <div className="hero-actions">
           <a href="#proyecto" className="btn btn-primary">
-            Descubre el proyecto
+            {t.hero.ctaPrimary}
           </a>
           <a href="#contacto" className="btn btn-outline">
-            Contacta con nosotros
+            {t.hero.ctaSecondary}
           </a>
         </div>
       </div>
 
-      <a href="#proyecto" className="hero-scroll" aria-label="Desplázate para descubrir más">
+      <a
+        href="#proyecto"
+        className="hero-scroll"
+        aria-label={t.hero.scroll}
+      >
         <span className="hero-scroll-mouse">
           <span />
         </span>
-        Desliza
+        {t.hero.scroll}
       </a>
     </section>
   );

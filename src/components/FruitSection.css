@@ -24,7 +24,7 @@
 
 .fruit-visual {
   position: relative;
-  flex: 0 0 42vh;
+  flex: 0 0 30vh;
   width: 100%;
   overflow: hidden;
 }
@@ -100,8 +100,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
-  padding: 26px clamp(20px, 6vw, 48px) 36px;
+  gap: 6px;
+  padding: 12px clamp(20px, 6vw, 48px) 14px;
+  overflow-y: auto;
 }
 
 .fruit-copy .eyebrow {
@@ -109,14 +110,14 @@
 }
 
 .fruit-title {
-  font-size: clamp(2rem, 8vw, 3.6rem);
+  font-size: clamp(1.6rem, 7vw, 3.6rem);
   line-height: 1.05;
 }
 
 .fruit-copy-stage {
   position: relative;
   display: grid;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .fruit-copy-phase {
@@ -137,7 +138,8 @@
 .fruit-lead {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: clamp(1.05rem, 3vw, 1.3rem);
+  font-size: clamp(0.92rem, 2.8vw, 1.3rem);
+  line-height: 1.4;
   color: var(--c-cream-dim);
   max-width: 48ch;
 }
@@ -145,19 +147,49 @@
 .fruit-paragraphs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   max-width: 54ch;
 }
 
 .fruit-paragraphs p {
   color: rgba(246, 242, 231, 0.78);
-  font-size: 0.92rem;
+  font-size: clamp(0.8rem, 2.6vw, 0.92rem);
+  line-height: 1.45;
+}
+
+.fruit-varieties {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fruit-variety {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  padding-left: 12px;
+  border-left: 2px solid var(--accent);
+}
+
+.fruit-variety-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(0.84rem, 2.6vw, 0.98rem);
+  color: var(--accent-light);
+  white-space: nowrap;
+}
+
+.fruit-variety-text {
+  color: rgba(246, 242, 231, 0.78);
+  font-size: clamp(0.8rem, 2.6vw, 0.92rem);
+  line-height: 1.4;
 }
 
 .fruit-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px 32px;
+  gap: 14px 28px;
 }
 
 .fruit-stat {
@@ -202,7 +234,34 @@
 
   .fruit-copy {
     flex: 0 0 44%;
+    gap: 12px;
     padding: 0 clamp(32px, 5vw, 72px);
+  }
+
+  .fruit-lead {
+    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  }
+
+  .fruit-paragraphs p,
+  .fruit-variety-text {
+    font-size: 0.92rem;
+  }
+
+  .fruit-variety-name {
+    font-size: 0.98rem;
+  }
+
+  .fruit-paragraphs {
+    gap: 10px;
+  }
+
+  .fruit-varieties {
+    margin-top: 16px;
+    gap: 12px;
+  }
+
+  .fruit-stats {
+    gap: 22px 32px;
   }
 }
 

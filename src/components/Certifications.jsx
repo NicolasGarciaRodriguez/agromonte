@@ -1,36 +1,20 @@
 import Reveal from "./Reveal.jsx";
+import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./Certifications.css";
 
-const CERTS = [
-  {
-    name: "Sohiscert",
-    text: "Respaldo al cumplimiento de los requisitos de la producción ecológica.",
-  },
-  {
-    name: "GLOBALG.A.P.",
-    text: "Referencia internacional en buenas prácticas agrícolas, seguridad alimentaria y gestión de la explotación.",
-  },
-  {
-    name: "GRASP",
-    text: "Integración de criterios sociales y laborales dentro de la gestión de la finca.",
-  },
-  {
-    name: "SPRING",
-    text: "Atención especial a la gestión responsable y eficiente del agua.",
-  },
-];
-
 export default function Certifications() {
+  const { t } = useLanguage();
+
   return (
     <section className="section certs">
       <div className="container">
-        <Reveal as="p" className="eyebrow">Garantías</Reveal>
+        <Reveal as="p" className="eyebrow">{t.certifications.eyebrow}</Reveal>
         <Reveal as="h2" delay={1} className="certs-title">
-          Certificaciones que avalan cada hectárea
+          {t.certifications.title}
         </Reveal>
 
         <div className="certs-grid">
-          {CERTS.map((c, i) => (
+          {t.certifications.certs.map((c, i) => (
             <Reveal as="div" className="cert-card" delay={(i % 4) + 1} key={c.name}>
               <div className="cert-mark" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none">

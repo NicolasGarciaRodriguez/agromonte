@@ -12,6 +12,7 @@ export default function FruitSection({
   title,
   lead,
   paragraphs,
+  varieties,
   stats,
   accent,
   reverse = false,
@@ -68,6 +69,16 @@ export default function FruitSection({
                     <p key={p.slice(0, 24)}>{p}</p>
                   ))}
                 </div>
+                {varieties && (
+                  <div className="fruit-varieties">
+                    {varieties.map((v) => (
+                      <div className="fruit-variety" key={v.name}>
+                        <span className="fruit-variety-name">{v.name}:</span>
+                        <span className="fruit-variety-text">{v.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
               <div className={`fruit-copy-phase${phase === 2 ? " is-active" : ""}`}>
                 <div className="fruit-stats">

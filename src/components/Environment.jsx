@@ -1,54 +1,57 @@
 import Reveal from "./Reveal.jsx";
+import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./Environment.css";
 
+const GALLERY_IMAGES = [
+  "abeja-en-flor-primer-plano.jpeg",
+  "bicho-para-combatir-plagas-primer-plano.jpeg",
+  "bichos-para-combatir-plagas-primer-plano.jpeg",
+];
+
+// Matches the original hand-picked stagger (2, 4, 3) rather than a plain
+// sequential reveal.
+const STAT_DELAYS = [2, 4, 3];
+
 export default function Environment() {
+  const { t } = useLanguage();
+
   return (
     <section className="section environment">
       <div className="environment-bg">
-        <img src="/img/fotos/ocas-por-el-campo-plano-medio.jpeg" alt="" aria-hidden="true" />
+        <img
+          src="/img/fotos/ocas-por-el-campo-plano-medio.jpeg"
+          alt=""
+          aria-hidden="true"
+        />
       </div>
       <div className="environment-overlay" />
 
       <div className="container environment-content">
-        <Reveal as="p" className="eyebrow">Huella hídrica &amp; huella de carbono</Reveal>
+        <Reveal as="p" className="eyebrow">
+          {t.environment.eyebrow}
+        </Reveal>
         <Reveal as="h2" delay={1} className="environment-title">
-          Cuidar el entorno no es un añadido: es el método
+          {t.environment.title}
         </Reveal>
         <Reveal as="p" delay={2} className="environment-text">
-          Riego tecnificado, sensorización y sistemas de protección del cultivo
-          reducen el consumo de agua hasta niveles técnicamente optimizados. La
-          agricultura regenerativa mejora, además, la salud del suelo y favorece
-          el almacenamiento de carbono en el propio ecosistema agrícola. Nuestro
-          compromiso no se limita a «contaminar menos»: perseguimos conservar los
-          recursos, regenerar el suelo y aumentar la biodiversidad mientras
-          producimos alimentos de calidad.
+          {t.environment.text}
         </Reveal>
 
         <div className="environment-stats">
-          <Reveal className="environment-stat" delay={2}>
-            <strong>50.000+</strong>
-            <span>árboles en masa forestal, fijando CO₂</span>
-          </Reveal>
-          <Reveal className="environment-stat" delay={3}>
-            <strong>Control biológico</strong>
-            <span>fauna auxiliar para el manejo natural de plagas</span>
-          </Reveal>
-          <Reveal className="environment-stat" delay={4}>
-            <strong>Riego de precisión</strong>
-            <span>sensorización que ajusta el agua a la necesidad real</span>
-          </Reveal>
+          {t.environment.stats.map((s, i) => (
+            <Reveal className="environment-stat" delay={STAT_DELAYS[i]} key={s.label}>
+              <strong>{s.value}</strong>
+              <span>{s.label}</span>
+            </Reveal>
+          ))}
         </div>
 
         <div className="environment-gallery">
-          <Reveal as="div" delay={2} className="environment-thumb">
-            <img src="/img/fotos/abeja-en-flor-primer-plano.jpeg" alt="Abeja polinizando una flor en la finca" loading="lazy" />
-          </Reveal>
-          <Reveal as="div" delay={3} className="environment-thumb">
-            <img src="/img/fotos/bicho-para-combatir-plagas-primer-plano.jpeg" alt="Insecto auxiliar para el control biológico de plagas" loading="lazy" />
-          </Reveal>
-          <Reveal as="div" delay={4} className="environment-thumb">
-            <img src="/img/fotos/bichos-para-combatir-plagas-primer-plano.jpeg" alt="Fauna auxiliar utilizada en el control biológico" loading="lazy" />
-          </Reveal>
+          {GALLERY_IMAGES.map((img, i) => (
+            <Reveal as="div" delay={(i % 3) + 2} className="environment-thumb" key={img}>
+              <img src={`/img/fotos/${img}`} alt={t.environment.galleryAlt[i]} loading="lazy" />
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

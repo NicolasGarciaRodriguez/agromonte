@@ -1,0 +1,42 @@
+.lang-switcher {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 150;
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(10, 20, 13, 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(246, 242, 231, 0.18);
+}
+
+.lang-switcher button {
+  padding: 6px 11px;
+  min-width: 38px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(246, 242, 231, 0.6);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.lang-switcher button:hover {
+  color: var(--c-cream);
+}
+
+.lang-switcher button.is-active {
+  background: var(--c-cream);
+  color: var(--c-green-900);
+}
+
+@media (min-width: 720px) {
+  .lang-switcher {
+    top: 20px;
+    right: 20px;
+  }
+}
