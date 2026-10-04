@@ -106,7 +106,7 @@ export const translations = {
     },
     oliva: {
       eyebrow: "Tradición y posicionamiento gourmet",
-      title: "Oliva Manzanilla",
+      title: "Aceituna Manzanilla",
       lead: "Cerca de 5.000 olivos de una de las variedades de aceituna de mesa más relevantes de España.",
       paragraphs: [
         "Fruto de forma redondeada, calibre apreciado y textura firme, especialmente adecuado para aceituna de mesa, con un perfil organoléptico equilibrado y gran versatilidad.",
@@ -120,7 +120,7 @@ export const translations = {
       ],
       gallery: {
         eyebrow: "En imágenes",
-        title: "La oliva Manzanilla",
+        title: "La aceituna Manzanilla",
         photos: [
           { src: "olivos-primer-plano.jpeg", alt: "Aceitunas Manzanilla en primer plano" },
           { src: "olivos-plano-general.jpeg", alt: "Olivar Manzanilla, plano general" },
@@ -168,12 +168,12 @@ export const translations = {
     },
     contact: {
       eyebrow: "Contacto",
-      title: "Hablemos de granada, mandarina u oliva",
+      title: "Hablemos de granada, mandarina y aceituna",
       text: "¿Eres importador, distribuidor o simplemente quieres saber más sobre el proyecto Agromonte? Escríbenos y te responderemos lo antes posible.",
       metaExplotacionLabel: "Explotación",
       metaExplotacionValue: "160+ hectáreas · agricultura regenerativa",
       metaProductosLabel: "Productos",
-      metaProductosValue: "Granada ecológica · Mandarina Nadorcott · Oliva Manzanilla",
+      metaProductosValue: "Granada ecológica · Mandarina Nadorcott · Aceituna Manzanilla",
       formName: "Nombre",
       formEmail: "Email",
       formSubject: "Asunto",
@@ -186,7 +186,7 @@ export const translations = {
     },
     footer: {
       tagline: "Producir hoy, cuidando el mañana.",
-      links: { proyecto: "Proyecto", granada: "Granada", mandarina: "Mandarina", oliva: "Oliva", tecnologia: "Tecnología", contacto: "Contacto" },
+      links: { proyecto: "Proyecto", granada: "Granada", mandarina: "Mandarina", oliva: "Aceituna", tecnologia: "Tecnología", contacto: "Contacto" },
       copy: (year) => `© ${year} Agromonte · Agricultura regenerativa, ecológica y tecnológica.`,
     },
   },

@@ -14,13 +14,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scaleX(-1);
 }
 
 .environment-overlay {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(120deg, rgba(14, 26, 16, 0.95) 20%, rgba(14, 26, 16, 0.68) 65%, rgba(14, 26, 16, 0.5) 100%);
+  background: linear-gradient(120deg, rgba(14, 26, 16, 0.58) 20%, rgba(14, 26, 16, 0.38) 65%, rgba(14, 26, 16, 0.22) 100%);
 }
 
 .environment-content {
@@ -28,10 +29,18 @@
   z-index: 1;
 }
 
+.environment-content .eyebrow {
+  color: var(--c-gold);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.85);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
 .environment-title {
   margin-top: 16px;
   font-size: clamp(2.1rem, 4.4vw, 3.1rem);
   max-width: 22ch;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.75), 0 1px 4px rgba(0, 0, 0, 0.85);
 }
 
 .environment-text {
@@ -39,6 +48,7 @@
   max-width: 65ch;
   color: rgba(246, 242, 231, 0.85);
   font-size: 1.02rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .environment-stats {
@@ -61,11 +71,13 @@
   font-family: var(--font-display);
   font-size: 1.3rem;
   color: var(--c-gold);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .environment-stat span {
   font-size: 0.86rem;
   color: rgba(246, 242, 231, 0.75);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .environment-gallery {
