@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import useScrollLock from "../hooks/useScrollLock.js";
 import "./PhotoCarousel.css";
 
 export default function PhotoCarousel({ photos, accent }) {
@@ -40,20 +41,18 @@ export default function PhotoCarousel({ photos, accent }) {
     track.scrollTo({ left: child.offsetLeft - (track.clientWidth - child.clientWidth) / 2, behavior: "smooth" });
   }
 
-  // Lightbox: lock scroll + keyboard navigation while open.
+  // Lightbox: lock scroll (including touch-drag on mobile) + keyboard nav.
+  useScrollLock(lightboxIndex !== null);
+
   useEffect(() => {
     if (lightboxIndex === null) return undefined;
-    document.body.classList.add("lock-scroll");
     const onKey = (e) => {
       if (e.key === "Escape") setLightboxIndex(null);
       if (e.key === "ArrowRight") setLightboxIndex((i) => (i + 1) % photos.length);
       if (e.key === "ArrowLeft") setLightboxIndex((i) => (i - 1 + photos.length) % photos.length);
     };
     window.addEventListener("keydown", onKey);
-    return () => {
-      document.body.classList.remove("lock-scroll");
-      window.removeEventListener("keydown", onKey);
-    };
+    return () => window.removeEventListener("keydown", onKey);
   }, [lightboxIndex, photos.length]);
 
   const showDots = photos.length <= 8;

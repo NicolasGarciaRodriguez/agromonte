@@ -95,7 +95,7 @@ export default function App() {
           folder="oliva"
           accent="olive"
           eyebrow="Tradición y posicionamiento gourmet"
-          title="Olivar Manzanilla"
+          title="Oliva Manzanilla"
           lead="Cerca de 5.000 olivos de una de las variedades de aceituna de mesa más relevantes de España."
           paragraphs={[
             "Fruto de forma redondeada, calibre apreciado y textura firme, especialmente adecuado para aceituna de mesa, con un perfil organoléptico equilibrado y gran versatilidad.",
@@ -111,7 +111,7 @@ export default function App() {
 
         <FruitGallery
           eyebrow="En imágenes"
-          title="El olivar Manzanilla"
+          title="La oliva Manzanilla"
           accent="olive"
           photos={[
             { src: "olivos-primer-plano.jpeg", alt: "Aceitunas Manzanilla en primer plano" },

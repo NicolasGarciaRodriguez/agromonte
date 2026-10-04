@@ -40,8 +40,10 @@ body {
 }
 
 body.lock-scroll {
+  position: fixed;
+  left: 0;
+  right: 0;
   overflow: hidden;
-  height: 100vh;
 }
 
 h1, h2, h3, h4 {

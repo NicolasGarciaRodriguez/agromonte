@@ -13,7 +13,7 @@ export default function Footer() {
           <a href="#proyecto">Proyecto</a>
           <a href="#granada">Granada</a>
           <a href="#mandarina">Mandarina</a>
-          <a href="#oliva">Olivar</a>
+          <a href="#oliva">Oliva</a>
           <a href="#tecnologia">Tecnología</a>
           <a href="#contacto">Contacto</a>
         </nav>

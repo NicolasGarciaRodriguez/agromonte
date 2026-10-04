@@ -47,7 +47,7 @@ export default function ContactForm() {
         <div className="contact-intro">
           <Reveal as="p" className="eyebrow">Contacto</Reveal>
           <Reveal as="h2" delay={1} className="contact-title">
-            Hablemos de granada, mandarina u olivar
+            Hablemos de granada, mandarina u oliva
           </Reveal>
           <Reveal as="p" delay={2} className="contact-text">
             ¿Eres importador, distribuidor o simplemente quieres saber más sobre
