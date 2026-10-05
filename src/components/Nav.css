@@ -30,13 +30,20 @@
 }
 
 .nav-brand {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--c-cream);
+  display: inline-flex;
+  align-items: center;
+  background: var(--c-cream);
+  border-radius: 999px;
+  padding: 7px 16px;
+  line-height: 0;
   text-decoration: none;
   z-index: 2;
+}
+
+.nav-logo {
+  display: block;
+  height: 26px;
+  width: auto;
 }
 
 .nav-links {

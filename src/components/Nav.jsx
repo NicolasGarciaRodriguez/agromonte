@@ -37,7 +37,7 @@ export default function Nav() {
     <header className={`nav${scrolled ? " nav--scrolled" : ""}${open ? " nav--open" : ""}`}>
       <div className="nav-inner container">
         <Link to="/" className="nav-brand">
-          AGROMONTE
+          <img src="/img/logo-agromonte.png" alt="Agromonte" className="nav-logo" />
         </Link>
 
         <nav className="nav-links">
