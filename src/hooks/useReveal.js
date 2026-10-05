@@ -1,32 +1,26 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-/**
- * Attaches an IntersectionObserver to the returned ref and toggles the
- * "in-view" class once the element enters the viewport, driving the
- * .reveal CSS transition defined in index.css.
- */
-export default function useReveal(options) {
+export default function useReveal({ threshold = 0.18 } = {}) {
   const ref = useRef(null);
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return undefined;
 
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-            observer.unobserve(entry.target);
-          }
-        });
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
       },
-      { threshold: 0.18, rootMargin: "0px 0px -8% 0px", ...options }
+      { threshold, rootMargin: "0px 0px -8% 0px" }
     );
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [options]);
+  }, [threshold]);
 
-  return ref;
+  return [ref, inView];
 }

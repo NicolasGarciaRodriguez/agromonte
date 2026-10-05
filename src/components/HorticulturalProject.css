@@ -1,0 +1,141 @@
+.horticultural {
+  position: relative;
+  color: var(--c-cream);
+  overflow: hidden;
+}
+
+.horticultural-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.horticultural-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horticultural-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(14, 26, 16, 0.78) 0%, rgba(14, 26, 16, 0.62) 40%, rgba(14, 26, 16, 0.88) 100%);
+}
+
+.horticultural-content {
+  position: relative;
+  z-index: 1;
+}
+
+.horticultural-content .eyebrow {
+  color: var(--c-gold);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.85);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.horticultural-title {
+  margin-top: 16px;
+  font-size: clamp(2.1rem, 4.4vw, 3.1rem);
+  max-width: 24ch;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.7), 0 1px 4px rgba(0, 0, 0, 0.85);
+}
+
+.horticultural-lead {
+  margin-top: 20px;
+  max-width: 62ch;
+  color: rgba(246, 242, 231, 0.88);
+  font-size: 1.05rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.horticultural-crops {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.horticultural-crops span {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(246, 242, 231, 0.1);
+  border: 1px solid rgba(246, 242, 231, 0.3);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.horticultural-blocks {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(246, 242, 231, 0.14);
+  border: 1px solid rgba(246, 242, 231, 0.14);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.horticultural-block {
+  background: rgba(14, 26, 16, 0.68);
+  padding: 30px 28px;
+}
+
+.horticultural-block h3 {
+  font-size: 1.15rem;
+  color: var(--c-olive-light);
+}
+
+.horticultural-block p {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: rgba(246, 242, 231, 0.75);
+  line-height: 1.55;
+}
+
+.horticultural-stats {
+  margin-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.horticultural-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.horticultural-stat strong {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--c-gold);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.horticultural-stat span {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(246, 242, 231, 0.65);
+}
+
+.horticultural-tagline {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(246, 242, 231, 0.2);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--c-gold);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 760px) {
+  .horticultural-blocks {
+    grid-template-columns: 1fr;
+  }
+}

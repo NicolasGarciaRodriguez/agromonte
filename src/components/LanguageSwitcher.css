@@ -1,9 +1,5 @@
 .lang-switcher {
-  position: fixed;
-  top: 14px;
-  right: 14px;
-  z-index: 150;
-  display: flex;
+  display: inline-flex;
   gap: 2px;
   padding: 4px;
   border-radius: 999px;
@@ -32,11 +28,4 @@
 .lang-switcher button.is-active {
   background: var(--c-cream);
   color: var(--c-green-900);
-}
-
-@media (min-width: 720px) {
-  .lang-switcher {
-    top: 20px;
-    right: 20px;
-  }
 }

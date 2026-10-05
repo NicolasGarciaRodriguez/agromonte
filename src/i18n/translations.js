@@ -6,6 +6,11 @@ export const LOCALES = {
 
 export const translations = {
   es: {
+    nav: {
+      home: "Inicio",
+      products: "Productos",
+      contact: "Contacto",
+    },
     hero: {
       eyebrow: "Agricultura regenerativa · Ecológica · Tecnológica",
       tagline: "Producir hoy, cuidando el mañana.",
@@ -40,6 +45,11 @@ export const translations = {
           text: "Más de 50.000 árboles en masa forestal y una gestión que promueve la vida silvestre convierten la finca en un ecosistema productivo, donde actividad agrícola y conservación ambiental avanzan juntas.",
         },
       ],
+    },
+    products: {
+      eyebrow: "Nuestros productos",
+      title: "Tres cultivos, una misma exigencia",
+      lead: "Granada ecológica, mandarina Nadorcott y aceituna Manzanilla: tres productos de alto valor cultivados bajo el mismo compromiso con la calidad, la tecnología y el territorio.",
     },
     granada: {
       eyebrow: "Producto estratégico",
@@ -204,6 +214,28 @@ export const translations = {
         ],
       },
     },
+    horticultural: {
+      eyebrow: "Nuevo proyecto",
+      title: "Más de 60 hectáreas de agricultura ecológica y regenerativa",
+      lead: "En Agromonte seguimos creciendo y apostando por una agricultura de futuro. Desarrollamos un nuevo proyecto hortícola de más de 60 hectáreas, concebido bajo los principios de la agricultura ecológica y regenerativa, combinando sostenibilidad, innovación y eficiencia.",
+      crops: ["Tomate", "Pimiento", "Patata", "Boniato", "Zanahoria"],
+      blocks: [
+        {
+          title: "Cultivar, regenerar y mejorar",
+          text: "El proyecto nace con una idea clara: producir alimentos de máxima calidad y, al mismo tiempo, cuidar y mejorar la tierra. Trabajamos con rotaciones de cultivos, mejora de la fertilidad y vida del suelo, uso eficiente del agua y prácticas que favorecen la biodiversidad.",
+        },
+        {
+          title: "Tecnología y eficiencia",
+          text: "Siguiendo la filosofía de Agromonte, incorporamos sistemas de riego eficiente, control y monitorización de los cultivos y una gestión cada vez más basada en datos: medir para mejorar, optimizar recursos y conseguir una agricultura más sostenible, productiva y competitiva.",
+        },
+      ],
+      stats: [
+        { value: "60+", label: "hectáreas" },
+        { value: "5", label: "cultivos" },
+        { value: "1", label: "misma filosofía" },
+      ],
+      tagline: "Cultivar hoy pensando en mañana.",
+    },
     technology: {
       eyebrow: "Tecnología & domotización",
       title: "Agricultura de precisión al servicio del cultivo",
@@ -304,6 +336,7 @@ export const translations = {
         granada: "Granada",
         mandarina: "Mandarina",
         oliva: "Aceituna",
+        horticola: "Hortícola",
         tecnologia: "Tecnología",
         contacto: "Contacto",
       },
@@ -313,6 +346,11 @@ export const translations = {
   },
 
   en: {
+    nav: {
+      home: "Home",
+      products: "Products",
+      contact: "Contact",
+    },
     hero: {
       eyebrow: "Regenerative · Organic · Technological Agriculture",
       tagline: "Growing today, caring for tomorrow.",
@@ -347,6 +385,11 @@ export const translations = {
           text: "Over 50,000 trees in forest cover and management that encourages wildlife turn the estate into a productive ecosystem, where farming and environmental conservation move forward together.",
         },
       ],
+    },
+    products: {
+      eyebrow: "Our products",
+      title: "Three crops, one same standard",
+      lead: "Organic pomegranate, Nadorcott mandarin and Manzanilla olive: three high-value products grown under the same commitment to quality, technology and the land.",
     },
     granada: {
       eyebrow: "Strategic product",
@@ -505,6 +548,28 @@ export const translations = {
         ],
       },
     },
+    horticultural: {
+      eyebrow: "New project",
+      title: "Over 60 hectares of organic, regenerative farming",
+      lead: "Agromonte keeps growing, betting on the agriculture of the future. We're developing a new horticultural project spanning over 60 hectares, built on the principles of organic and regenerative farming, combining sustainability, innovation and efficiency.",
+      crops: ["Tomato", "Pepper", "Potato", "Sweet potato", "Carrot"],
+      blocks: [
+        {
+          title: "Growing, regenerating, improving",
+          text: "The project was born from a clear idea: produce top-quality food while caring for and improving the land. We work with crop rotation, soil fertility and biological life, efficient water use, and practices that favour biodiversity.",
+        },
+        {
+          title: "Technology and efficiency",
+          text: "Following Agromonte's philosophy, we're bringing in efficient irrigation systems, crop monitoring and control, and increasingly data-driven management: measure to improve, optimise resources and achieve more sustainable, productive, competitive farming.",
+        },
+      ],
+      stats: [
+        { value: "60+", label: "hectares" },
+        { value: "5", label: "crops" },
+        { value: "1", label: "shared philosophy" },
+      ],
+      tagline: "Growing today with tomorrow in mind.",
+    },
     technology: {
       eyebrow: "Technology & home automation",
       title: "Precision agriculture in service of the crop",
@@ -605,6 +670,7 @@ export const translations = {
         granada: "Pomegranate",
         mandarina: "Mandarin",
         oliva: "Olive",
+        horticola: "Horticulture",
         tecnologia: "Technology",
         contacto: "Contact",
       },
@@ -614,6 +680,11 @@ export const translations = {
   },
 
   fr: {
+    nav: {
+      home: "Accueil",
+      products: "Produits",
+      contact: "Contact",
+    },
     hero: {
       eyebrow: "Agriculture régénérative · Biologique · Technologique",
       tagline: "Produire aujourd'hui, en prenant soin de demain.",
@@ -648,6 +719,11 @@ export const translations = {
           text: "Plus de 50 000 arbres en masse forestière et une gestion qui favorise la faune sauvage font de l'exploitation un écosystème productif, où activité agricole et préservation de l'environnement avancent ensemble.",
         },
       ],
+    },
+    products: {
+      eyebrow: "Nos produits",
+      title: "Trois cultures, une même exigence",
+      lead: "Grenade biologique, mandarine Nadorcott et olive Manzanilla : trois produits à forte valeur ajoutée, cultivés avec la même exigence de qualité, de technologie et de respect du territoire.",
     },
     granada: {
       eyebrow: "Produit stratégique",
@@ -809,6 +885,28 @@ export const translations = {
         ],
       },
     },
+    horticultural: {
+      eyebrow: "Nouveau projet",
+      title: "Plus de 60 hectares d'agriculture biologique et régénérative",
+      lead: "Agromonte continue de grandir et de miser sur l'agriculture de demain. Nous développons un nouveau projet maraîcher de plus de 60 hectares, conçu selon les principes de l'agriculture biologique et régénérative, alliant durabilité, innovation et efficacité.",
+      crops: ["Tomate", "Poivron", "Pomme de terre", "Patate douce", "Carotte"],
+      blocks: [
+        {
+          title: "Cultiver, régénérer, améliorer",
+          text: "Le projet est né d'une idée claire : produire des aliments de la plus haute qualité tout en prenant soin de la terre et en l'améliorant. Nous travaillons avec la rotation des cultures, l'amélioration de la fertilité et de la vie du sol, une utilisation efficace de l'eau et des pratiques qui favorisent la biodiversité.",
+        },
+        {
+          title: "Technologie et efficacité",
+          text: "Dans l'esprit d'Agromonte, nous intégrons des systèmes d'irrigation efficaces, le suivi et le contrôle des cultures, ainsi qu'une gestion de plus en plus pilotée par les données : mesurer pour progresser, optimiser les ressources et bâtir une agriculture plus durable, productive et compétitive.",
+        },
+      ],
+      stats: [
+        { value: "60+", label: "hectares" },
+        { value: "5", label: "cultures" },
+        { value: "1", label: "même philosophie" },
+      ],
+      tagline: "Cultiver aujourd'hui en pensant à demain.",
+    },
     technology: {
       eyebrow: "Technologie & domotique",
       title: "L'agriculture de précision au service de la culture",
@@ -913,6 +1011,7 @@ export const translations = {
         granada: "Grenade",
         mandarina: "Mandarine",
         oliva: "Olive",
+        horticola: "Maraîchage",
         tecnologia: "Technologie",
         contacto: "Contact",
       },

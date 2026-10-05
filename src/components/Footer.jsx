@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./Footer.css";
 
@@ -14,12 +15,13 @@ export default function Footer() {
         </div>
 
         <nav className="footer-links">
-          <a href="#proyecto">{links.proyecto}</a>
-          <a href="#granada">{links.granada}</a>
-          <a href="#mandarina">{links.mandarina}</a>
-          <a href="#oliva">{links.oliva}</a>
-          <a href="#tecnologia">{links.tecnologia}</a>
-          <a href="#contacto">{links.contacto}</a>
+          <Link to="/#proyecto">{links.proyecto}</Link>
+          <Link to="/productos#granada">{links.granada}</Link>
+          <Link to="/productos#mandarina">{links.mandarina}</Link>
+          <Link to="/productos#oliva">{links.oliva}</Link>
+          <Link to="/#horticola">{links.horticola}</Link>
+          <Link to="/#tecnologia">{links.tecnologia}</Link>
+          <Link to="/#contacto">{links.contacto}</Link>
         </nav>
 
         <p className="footer-copy">{t.footer.copy(new Date().getFullYear())}</p>

@@ -1,6 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./Hero.css";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
   // The source clip is a one-way drone flythrough, not a seamless loop: a
@@ -10,9 +14,28 @@ export default function Hero() {
   const [reversed, setReversed] = useState(false);
   const { t } = useLanguage();
 
+  const sectionRef = useRef(null);
+  const bgRef = useRef(null);
+
+  // Subtle GSAP-driven parallax: the background drifts slightly slower
+  // than the page scroll, so the video feels like it has depth instead of
+  // scrolling 1:1 with the text in front of it.
+  useEffect(() => {
+    const trigger = ScrollTrigger.create({
+      trigger: sectionRef.current,
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+      onUpdate: (self) => {
+        gsap.set(bgRef.current, { yPercent: self.progress * -9 });
+      },
+    });
+    return () => trigger.kill();
+  }, []);
+
   return (
-    <section id="top" className="hero">
-      <div className="hero-bg">
+    <section id="top" className="hero" ref={sectionRef}>
+      <div className="hero-bg" ref={bgRef}>
         <video
           key={reversed ? "rev" : "fwd"}
           className="hero-bg-video"
