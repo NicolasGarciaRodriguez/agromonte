@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
@@ -56,9 +57,9 @@ export default function Hero() {
         <p className="hero-tagline">{t.hero.tagline}</p>
         <p className="hero-desc">{t.hero.desc}</p>
         <div className="hero-actions">
-          <a href="#proyecto" className="btn btn-primary">
+          <Link to="/productos" className="btn btn-primary">
             {t.hero.ctaPrimary}
-          </a>
+          </Link>
           <a href="#contacto" className="btn btn-outline">
             {t.hero.ctaSecondary}
           </a>

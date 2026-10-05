@@ -9,6 +9,23 @@
   overflow: hidden;
   background: var(--c-green-900);
   color: var(--c-cream);
+  /* Reserves space for the fixed nav so vertically-centered hero content
+     (the eyebrow line especially) never ends up starting underneath it —
+     on short viewports the centered block can otherwise sit higher than
+     the nav's own height. */
+  padding-top: 84px;
+  /* Belt-and-braces for very short viewports (landscape phones, long
+     translated copy): "safe center" keeps the padding-top reservation
+     even when there isn't enough room to truly center, instead of
+     letting the overflow push back up into the nav. Browsers that don't
+     support "safe" ignore this line and keep the plain "center" above. */
+  justify-content: safe center;
+}
+
+@media (min-width: 880px) {
+  .hero {
+    padding-top: 96px;
+  }
 }
 
 .hero-bg {
