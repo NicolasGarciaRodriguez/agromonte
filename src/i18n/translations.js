@@ -216,8 +216,8 @@ export const translations = {
     },
     horticultural: {
       eyebrow: "Nuevo proyecto",
-      title: "Más de 60 hectáreas de agricultura ecológica y regenerativa",
-      lead: "En Agromonte seguimos creciendo y apostando por una agricultura de futuro. Desarrollamos un nuevo proyecto hortícola de más de 60 hectáreas, concebido bajo los principios de la agricultura ecológica y regenerativa, combinando sostenibilidad, innovación y eficiencia.",
+      title: "Más de 100 hectáreas de agricultura ecológica y regenerativa",
+      lead: "En Agromonte seguimos creciendo y apostando por una agricultura de futuro. Desarrollamos un nuevo proyecto hortícola de más de 100 hectáreas, concebido bajo los principios de la agricultura ecológica y regenerativa, combinando sostenibilidad, innovación y eficiencia.",
       crops: ["Tomate", "Pimiento", "Patata", "Boniato", "Zanahoria"],
       blocks: [
         {
@@ -230,7 +230,7 @@ export const translations = {
         },
       ],
       stats: [
-        { value: "60+", label: "hectáreas" },
+        { value: "100+", label: "hectáreas" },
         { value: "5", label: "cultivos" },
         { value: "1", label: "misma filosofía" },
       ],
@@ -550,8 +550,8 @@ export const translations = {
     },
     horticultural: {
       eyebrow: "New project",
-      title: "Over 60 hectares of organic, regenerative farming",
-      lead: "Agromonte keeps growing, betting on the agriculture of the future. We're developing a new horticultural project spanning over 60 hectares, built on the principles of organic and regenerative farming, combining sustainability, innovation and efficiency.",
+      title: "Over 100 hectares of organic, regenerative farming",
+      lead: "Agromonte keeps growing, betting on the agriculture of the future. We're developing a new horticultural project spanning over 100 hectares, built on the principles of organic and regenerative farming, combining sustainability, innovation and efficiency.",
       crops: ["Tomato", "Pepper", "Potato", "Sweet potato", "Carrot"],
       blocks: [
         {
@@ -564,7 +564,7 @@ export const translations = {
         },
       ],
       stats: [
-        { value: "60+", label: "hectares" },
+        { value: "100+", label: "hectares" },
         { value: "5", label: "crops" },
         { value: "1", label: "shared philosophy" },
       ],
@@ -887,8 +887,8 @@ export const translations = {
     },
     horticultural: {
       eyebrow: "Nouveau projet",
-      title: "Plus de 60 hectares d'agriculture biologique et régénérative",
-      lead: "Agromonte continue de grandir et de miser sur l'agriculture de demain. Nous développons un nouveau projet maraîcher de plus de 60 hectares, conçu selon les principes de l'agriculture biologique et régénérative, alliant durabilité, innovation et efficacité.",
+      title: "Plus de 100 hectares d'agriculture biologique et régénérative",
+      lead: "Agromonte continue de grandir et de miser sur l'agriculture de demain. Nous développons un nouveau projet maraîcher de plus de 100 hectares, conçu selon les principes de l'agriculture biologique et régénérative, alliant durabilité, innovation et efficacité.",
       crops: ["Tomate", "Poivron", "Pomme de terre", "Patate douce", "Carotte"],
       blocks: [
         {
@@ -901,7 +901,7 @@ export const translations = {
         },
       ],
       stats: [
-        { value: "60+", label: "hectares" },
+        { value: "100+", label: "hectares" },
         { value: "5", label: "cultures" },
         { value: "1", label: "même philosophie" },
       ],
