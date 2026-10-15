@@ -11,6 +11,16 @@ export const translations = {
       products: "Productos",
       contact: "Contacto",
     },
+    seo: {
+      home: {
+        title: "Agromonte · Producir hoy cuidando el mañana",
+        description: "Agricultura regenerativa, ecológica y tecnológica en el valle del Guadalquivir. Granada, mandarina Nadorcott y aceituna Manzanilla de máxima calidad.",
+      },
+      products: {
+        title: "Productos · Granada, mandarina y aceituna ecológicas | Agromonte",
+        description: "Granada ecológica, mandarina Nadorcott y aceituna Manzanilla: tres productos de alto valor cultivados con el mismo compromiso con la calidad, la tecnología y el territorio.",
+      },
+    },
     hero: {
       eyebrow: "Agricultura regenerativa · Ecológica · Tecnológica",
       tagline: "Producir hoy, cuidando el mañana.",
@@ -50,6 +60,7 @@ export const translations = {
       eyebrow: "Nuestros productos",
       title: "Tres cultivos, una misma exigencia",
       lead: "Granada ecológica, mandarina Nadorcott y aceituna Manzanilla: tres productos de alto valor cultivados bajo el mismo compromiso con la calidad, la tecnología y el territorio.",
+      scrollHint: "Desliza para descubrir",
     },
     granada: {
       eyebrow: "Producto estratégico",
@@ -351,6 +362,16 @@ export const translations = {
       products: "Products",
       contact: "Contact",
     },
+    seo: {
+      home: {
+        title: "Agromonte · Growing today, caring for tomorrow",
+        description: "Regenerative, organic and technological agriculture in the Guadalquivir valley. Premium pomegranate, Nadorcott mandarin and Manzanilla olive.",
+      },
+      products: {
+        title: "Products · Organic pomegranate, mandarin and olive | Agromonte",
+        description: "Organic pomegranate, Nadorcott mandarin and Manzanilla olive: three high-value products grown with the same commitment to quality, technology and the land.",
+      },
+    },
     hero: {
       eyebrow: "Regenerative · Organic · Technological Agriculture",
       tagline: "Growing today, caring for tomorrow.",
@@ -390,6 +411,7 @@ export const translations = {
       eyebrow: "Our products",
       title: "Three crops, one same standard",
       lead: "Organic pomegranate, Nadorcott mandarin and Manzanilla olive: three high-value products grown under the same commitment to quality, technology and the land.",
+      scrollHint: "Scroll to explore",
     },
     granada: {
       eyebrow: "Strategic product",
@@ -685,6 +707,16 @@ export const translations = {
       products: "Produits",
       contact: "Contact",
     },
+    seo: {
+      home: {
+        title: "Agromonte · Produire aujourd'hui, en prenant soin de demain",
+        description: "Agriculture régénérative, biologique et technologique dans la vallée du Guadalquivir. Grenade, mandarine Nadorcott et olive Manzanilla de qualité supérieure.",
+      },
+      products: {
+        title: "Produits · Grenade, mandarine et olive biologiques | Agromonte",
+        description: "Grenade biologique, mandarine Nadorcott et olive Manzanilla : trois produits à forte valeur ajoutée, cultivés avec la même exigence de qualité, de technologie et de respect du territoire.",
+      },
+    },
     hero: {
       eyebrow: "Agriculture régénérative · Biologique · Technologique",
       tagline: "Produire aujourd'hui, en prenant soin de demain.",
@@ -724,6 +756,7 @@ export const translations = {
       eyebrow: "Nos produits",
       title: "Trois cultures, une même exigence",
       lead: "Grenade biologique, mandarine Nadorcott et olive Manzanilla : trois produits à forte valeur ajoutée, cultivés avec la même exigence de qualité, de technologie et de respect du territoire.",
+      scrollHint: "Défiler pour découvrir",
     },
     granada: {
       eyebrow: "Produit stratégique",

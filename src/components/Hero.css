@@ -14,17 +14,24 @@
      on short viewports the centered block can otherwise sit higher than
      the nav's own height. */
   padding-top: 84px;
+  /* Same idea at the bottom: reserves room for the "Desliza" scroll hint
+     (.hero-scroll, ~94px tall including its own offset) so the centered
+     content — the actions row especially, on long Spanish copy — never
+     grows down into it. */
+  padding-bottom: 100px;
   /* Belt-and-braces for very short viewports (landscape phones, long
-     translated copy): "safe center" keeps the padding-top reservation
-     even when there isn't enough room to truly center, instead of
-     letting the overflow push back up into the nav. Browsers that don't
-     support "safe" ignore this line and keep the plain "center" above. */
+     translated copy): "safe center" keeps the padding reservations above
+     even when there isn't enough room to truly center, instead of letting
+     the overflow push back out into the nav or the scroll hint. Browsers
+     that don't support "safe" ignore this line and keep the plain
+     "center" above. */
   justify-content: safe center;
 }
 
 @media (min-width: 880px) {
   .hero {
     padding-top: 96px;
+    padding-bottom: 0;
   }
 }
 

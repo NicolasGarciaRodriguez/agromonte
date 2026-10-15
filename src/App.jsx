@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Nav from "./components/Nav.jsx";
 import Footer from "./components/Footer.jsx";
+import Seo from "./components/Seo.jsx";
 import Home from "./pages/Home.jsx";
 import Products from "./pages/Products.jsx";
 
@@ -94,6 +95,7 @@ export default function App() {
     <>
       <Nav />
       <ScrollManager />
+      <Seo />
 
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>

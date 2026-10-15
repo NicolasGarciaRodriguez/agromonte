@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import useFrameSequence from "../hooks/useFrameSequence.js";
+import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./FruitSection.css";
 
 const PHASE_BOUNDARIES = [0.36, 0.7];
@@ -17,6 +18,7 @@ export default function FruitSection({
   accent,
   reverse = false,
 }) {
+  const { t } = useLanguage();
   const [phase, setPhase] = useState(0);
   const phaseRef = useRef(0);
 
@@ -48,10 +50,14 @@ export default function FruitSection({
                 <span style={{ transform: `scaleX(${Math.max(progressLoaded, 0.05)})` }} />
               </div>
             )}
-            <div className="fruit-phase-dots" aria-hidden="true">
-              {[0, 1, 2].map((i) => (
-                <span key={i} className={i === phase ? "is-active" : ""} />
-              ))}
+            <div
+              className={`fruit-scroll-hint${phase > 0 ? " is-hidden" : ""}`}
+              aria-hidden="true"
+            >
+              <span className="fruit-scroll-hint-icon">
+                <span />
+              </span>
+              {t.products.scrollHint}
             </div>
           </div>
 
