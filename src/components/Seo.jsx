@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 
-const SITE_URL = "https://agromonte.es";
+const SITE_URL = "https://www.agromonte.es";
 const OG_LOCALES = { es: "es_ES", en: "en_US", fr: "fr_FR" };
 
 const PAGE_KEY_BY_PATH = {

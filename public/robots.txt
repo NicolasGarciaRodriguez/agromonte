@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://agromonte.es/sitemap.xml
+Sitemap: https://www.agromonte.es/sitemap.xml
