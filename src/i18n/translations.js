@@ -14,7 +14,7 @@ export const translations = {
     hero: {
       eyebrow: "Agricultura regenerativa · Ecológica · Tecnológica",
       tagline: "Producir hoy, cuidando el mañana.",
-      desc: "Más de 160 hectáreas en las que la granada, la mandarina Nadorcott y la aceituna Manzanilla crecen bajo un mismo principio: la rentabilidad y la regeneración del territorio se refuerzan, no compiten. Interactuamos con el medio ambiente en uno de los lugares más icónicos de toda Europa, el valle del Guadalquivir junto a las marismas de Doñana.",
+      desc: "Más de 200 hectáreas en las que la granada, la mandarina Nadorcott y la aceituna Manzanilla crecen bajo un mismo principio: la rentabilidad y la regeneración del territorio se refuerzan, no compiten. Interactuamos con el medio ambiente en uno de los lugares más icónicos de toda Europa, el valle del Guadalquivir junto a las marismas de Doñana.",
       ctaPrimary: "Ver productos",
       ctaSecondary: "Contacta con nosotros",
       scroll: "Desliza",
@@ -314,7 +314,7 @@ export const translations = {
       text: "¿Eres exportador, distribuidor o simplemente quieres saber más sobre el proyecto Agromonte? Escríbenos y te responderemos lo antes posible.",
       metaExplotacionLabel: "Explotación",
       metaExplotacionValue:
-        "160+ hectáreas · agricultura regenerativa y ecológica",
+        "200+ hectáreas · agricultura regenerativa y ecológica",
       metaProductosLabel: "Productos",
       metaProductosValue:
         "Granada ecológica · Mandarina Nadorcott · Aceituna Manzanilla · Hortícolas",
@@ -354,7 +354,7 @@ export const translations = {
     hero: {
       eyebrow: "Regenerative · Organic · Technological Agriculture",
       tagline: "Growing today, caring for tomorrow.",
-      desc: "Over 160 hectares where pomegranate, Nadorcott mandarin and Manzanilla olive grow under one principle: profitability and land regeneration reinforce each other, they don't compete. We work alongside the environment in one of the most iconic landscapes in all of Europe, the Guadalquivir valley next to the Doñana marshes.",
+      desc: "Over 200 hectares where pomegranate, Nadorcott mandarin and Manzanilla olive grow under one principle: profitability and land regeneration reinforce each other, they don't compete. We work alongside the environment in one of the most iconic landscapes in all of Europe, the Guadalquivir valley next to the Doñana marshes.",
       ctaPrimary: "View products",
       ctaSecondary: "Get in touch",
       scroll: "Scroll",
@@ -647,7 +647,7 @@ export const translations = {
       title: "Let's talk pomegranate, mandarin or olive",
       text: "Are you an exporter, a distributor, or simply want to know more about the Agromonte project? Write to us and we'll get back to you as soon as possible.",
       metaExplotacionLabel: "Estate",
-      metaExplotacionValue: "160+ hectares · regenerative, organic agriculture",
+      metaExplotacionValue: "200+ hectares · regenerative, organic agriculture",
       metaProductosLabel: "Products",
       metaProductosValue:
         "Organic pomegranate · Nadorcott mandarin · Manzanilla olive · Horticultural crops",
@@ -688,7 +688,7 @@ export const translations = {
     hero: {
       eyebrow: "Agriculture régénérative · Biologique · Technologique",
       tagline: "Produire aujourd'hui, en prenant soin de demain.",
-      desc: "Plus de 160 hectares où la grenade, la mandarine Nadorcott et l'olive Manzanilla poussent selon un même principe : la rentabilité et la régénération du territoire se renforcent, elles ne s'opposent pas. Nous agissons au cœur de l'un des paysages les plus emblématiques d'Europe, la vallée du Guadalquivir, juste à côté des marais de Doñana.",
+      desc: "Plus de 200 hectares où la grenade, la mandarine Nadorcott et l'olive Manzanilla poussent selon un même principe : la rentabilité et la régénération du territoire se renforcent, elles ne s'opposent pas. Nous agissons au cœur de l'un des paysages les plus emblématiques d'Europe, la vallée du Guadalquivir, juste à côté des marais de Doñana.",
       ctaPrimary: "Voir les produits",
       ctaSecondary: "Contactez-nous",
       scroll: "Défiler",
@@ -988,7 +988,7 @@ export const translations = {
       title: "Parlons grenade, mandarine ou olive",
       text: "Vous êtes exportateur, distributeur, ou vous souhaitez simplement en savoir plus sur le projet Agromonte ? Écrivez-nous, nous vous répondrons au plus vite.",
       metaExplotacionLabel: "Exploitation",
-      metaExplotacionValue: "160+ hectares · agriculture régénérative et biologique",
+      metaExplotacionValue: "200+ hectares · agriculture régénérative et biologique",
       metaProductosLabel: "Produits",
       metaProductosValue:
         "Grenade biologique · Mandarine Nadorcott · Olive Manzanilla · Cultures maraîchères",

@@ -3,7 +3,7 @@ import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./StatsBar.css";
 
 const VALUES = [
-  { to: 160, suffix: "+" },
+  { to: 200, suffix: "+" },
   { to: 25000, suffix: "+" },
   { to: 20000, suffix: "+" },
   { to: 5000, suffix: "" },
