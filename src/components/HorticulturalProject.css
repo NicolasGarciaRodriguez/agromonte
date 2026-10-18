@@ -2,6 +2,11 @@
   position: relative;
   color: var(--c-cream);
   overflow: hidden;
+  /* Used to inherit this from the shared ".section" utility class when it
+     lived on its own as a Home section; now it's nested inside the
+     products explorer's detail panel, so it needs its own vertical
+     rhythm. */
+  padding: clamp(60px, 10vw, 110px) 0;
 }
 
 .horticultural-bg {

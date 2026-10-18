@@ -1,0 +1,307 @@
+.products-explorer {
+  position: relative;
+  /* Stays flat — the chroma-keyed fruit tiles are designed to blend into
+     one solid color, like a transparent PNG sitting on the page, so a
+     busy background here would break that illusion. The photo treatment
+     lives further down, on the detail panel instead. This exact tone is a
+     blend of the colors that actually show through each fruit's own
+     circle (the chroma-keyed canvas + its accent glow tint each read
+     slightly differently), picked so none of the four tiles looks like
+     it's sitting in a mismatched box. */
+  background: #1a2a1b;
+  color: var(--c-cream);
+  padding: 48px 0 clamp(70px, 10vw, 120px);
+}
+
+/* Soft blurred seam where this flat-colored section meets a photo above
+   (the intro) and below (the active fruit's detail photo) — straddles
+   each boundary so the blur actually softens the photo's own edge rather
+   than just sitting on top of solid color, which would do nothing. */
+.products-explorer::before,
+.products-explorer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 64px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.products-explorer::before {
+  top: -32px;
+}
+
+.products-explorer::after {
+  bottom: -32px;
+}
+
+/* ---- tile selector ---- */
+
+.product-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.product-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  color: var(--c-cream);
+  font-family: inherit;
+}
+
+.product-tile-visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  /* The fruit frames are chroma-keyed (transparent background), so this
+     shows through wherever the canvas isn't painting the fruit itself —
+     same tone as the explorer's own background, so it reads as "no box"
+     rather than a visible card behind the fruit. */
+  background: #1a2a1b;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-tile-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 50%, var(--accent) 0%, transparent 68%);
+  opacity: 0.22;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.product-tile-visual canvas,
+.product-tile-visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* The fruit frames are drawn "contain" (full, uncropped fruit) onto a
+   1920x1080-ish canvas, which leaves it fairly small in the middle of the
+   circle. Scaling the canvas itself crops in tight on the fruit without
+   touching how the frame sequence is actually drawn. */
+.product-tile-visual canvas {
+  transform: scale(var(--tile-zoom, 2.3));
+}
+
+.product-tile:hover .product-tile-visual,
+.product-tile.is-active .product-tile-visual {
+  border-color: var(--accent-light);
+}
+
+.product-tile:hover .product-tile-visual img {
+  transform: scale(1.05);
+}
+
+.product-tile-label {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+.product-tile.is-active .product-tile-label {
+  color: var(--accent-light);
+}
+
+/* ---- detail panel: fruit copy (ported from the old scroll-driven FruitSection) ---- */
+
+.product-detail-fruit {
+  position: relative;
+  overflow: hidden;
+  color: var(--c-cream);
+  padding: clamp(40px, 7vw, 72px) 0;
+}
+
+.product-detail-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.product-detail-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-detail-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 26, 16, 0.82) 0%,
+    rgba(14, 26, 16, 0.68) 40%,
+    rgba(14, 26, 16, 0.9) 100%
+  );
+}
+
+.product-detail-content {
+  position: relative;
+  z-index: 1;
+}
+
+.product-detail-grid {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.product-detail-main {
+  max-width: 80ch;
+}
+
+.product-detail-main .eyebrow {
+  color: var(--accent-light);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.fruit-title {
+  margin-top: 14px;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  line-height: 1.05;
+}
+
+.fruit-lead {
+  margin-top: 16px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  line-height: 1.4;
+  color: var(--c-cream-dim);
+}
+
+.fruit-paragraphs {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fruit-paragraphs p {
+  color: rgba(246, 242, 231, 0.78);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.fruit-varieties {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fruit-variety {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  padding-left: 12px;
+  border-left: 2px solid var(--accent);
+}
+
+.fruit-variety-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--accent-light);
+  white-space: nowrap;
+}
+
+.fruit-variety-text {
+  color: rgba(246, 242, 231, 0.78);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.fruit-stats {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.fruit-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(246, 242, 231, 0.14);
+}
+
+.fruit-stat:last-child {
+  padding-bottom: 0;
+}
+
+.fruit-stat-value {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--accent-light);
+}
+
+.fruit-stat-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: rgba(246, 242, 231, 0.6);
+}
+
+@media (min-width: 900px) {
+  .product-tiles {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  /* Stats sit beside the copy instead of underneath it, so the whole
+     fruit profile fits without scrolling past it. */
+  .product-detail-grid {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 56px;
+  }
+
+  .product-detail-main {
+    flex: 0 1 60%;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .fruit-stats {
+    margin-top: 0;
+    flex: 0 1 40%;
+    padding-left: 40px;
+    border-left: 1px solid rgba(246, 242, 231, 0.16);
+  }
+}
+
+@media (min-width: 1200px) {
+  .fruit-title {
+    font-size: clamp(2.2rem, 3.6vw, 3.4rem);
+  }
+}

@@ -81,12 +81,12 @@ export const translations = {
         },
       ],
       stats: [
-        { value: "25.000+", label: "granados ecológicos" },
-        { value: "Acco · Wonderful", label: "dos variedades complementarias" },
+        { value: "Acco · Wonderful", label: "dos variedades complementarias, una temprana y otra tardía" },
         {
           value: "100%",
-          label: "sistema único de túneles, creando un microclima",
+          label: "sistema único de túneles, creando un microclima e interactuando con la biofauna",
         },
+        { value: "25.000+", label: "granados ecológicos" },
       ],
       gallery: {
         eyebrow: "En imágenes",
@@ -139,16 +139,16 @@ export const translations = {
     mandarina: {
       eyebrow: "Exclusividad y calidad",
       title: "Mandarina Nadorcott",
-      lead: "Más de 20.000 árboles de una variedad protegida, de maduración tardía y altísima demanda en Europa.",
+      lead: "Más de 20.000 árboles de una variedad protegida con royalty, de maduración tardía y la más demandada del mercado internacional por sus características organolépticas.",
       paragraphs: [
-        "Equilibrio entre dulzor y acidez, elevada calidad organoléptica y buen rendimiento en zumo definen a la Nadorcott.",
-        "Su maduración tardía permite disponer de fruta en una ventana comercial clave, cuando la oferta de otras variedades disminuye: una ventaja estratégica para Agromonte.",
+        "Equilibrio entre dulzor y acidez. Eleva su calidad organoléptica y su rendimiento: características que definen a la Nadorcott.",
+        "Su maduración tardía permite disponer de fruta en una ventana comercial clave, cuando la oferta de otras variedades disminuye: una ventaja estratégica para el mercado nacional e internacional.",
         "Se cultiva con el mismo sistema tecnológico que optimiza agua, nutrición y recursos, aplicamos una agricultura regenerativa que cuida el entorno.",
       ],
       stats: [
-        { value: "20.000+", label: "mandarinos Nadorcott, variedad protegida" },
         { value: "Tardía", label: "ventana de maduración" },
         { value: "Europa", label: "principal mercado de exportación" },
+        { value: "20.000+", label: "mandarinos Nadorcott, variedad protegida con royalty" },
       ],
       gallery: {
         eyebrow: "En imágenes",
@@ -188,19 +188,19 @@ export const translations = {
     oliva: {
       eyebrow: "Tradición y posicionamiento gourmet",
       title: "Aceituna Manzanilla",
-      lead: "Cerca de 5.000 olivos de una de las variedades de aceituna de mesa más relevantes de España.",
+      lead: "Más de 5.000 olivos de una de las variedades de aceituna de mesa más relevantes de España, producida en un entorno único como es el valle del Guadalquivir.",
       paragraphs: [
         "Fruto de forma redondeada, calibre apreciado y textura firme, especialmente adecuado para aceituna de mesa, con un perfil organoléptico equilibrado y gran versatilidad.",
         "La Manzanilla representa cerca del 36% de la producción nacional de aceituna de mesa, solo por detrás de la Hojiblanca. España es, además, líder mundial en producción y exportación de esta categoría.",
         "En Agromonte el olivar conecta tradición e innovación: una variedad histórica cultivada con trazabilidad, eficiencia y agricultura regenerativa.",
       ],
       stats: [
-        { value: "5.000", label: "olivos Manzanilla" },
         {
           value: "~36%",
           label: "de la producción española de aceituna de mesa",
         },
         { value: "España", label: "líder mundial en exportación" },
+        { value: "5.000", label: "olivos Manzanilla" },
       ],
       gallery: {
         eyebrow: "En imágenes",
@@ -257,7 +257,7 @@ export const translations = {
           text: "Sensores que miden las necesidades reales de cada cultivo, parcela a parcela.",
         },
         {
-          title: "Riego automatizado",
+          title: "Riego domotizado",
           text: "Ajuste continuo del riego para optimizar cada gota de agua empleada.",
         },
         {
@@ -432,9 +432,9 @@ export const translations = {
         },
       ],
       stats: [
+        { value: "Acco · Wonderful", label: "two complementary varieties, one early and one late" },
+        { value: "100%", label: "unique tunnel system, creating a microclimate and working with local wildlife" },
         { value: "25,000+", label: "organic pomegranate trees" },
-        { value: "Acco · Wonderful", label: "two complementary varieties" },
-        { value: "100%", label: "unique tunnel system, creating a microclimate" },
       ],
       gallery: {
         eyebrow: "In pictures",
@@ -490,16 +490,16 @@ export const translations = {
     mandarina: {
       eyebrow: "Exclusivity and quality",
       title: "Nadorcott Mandarin",
-      lead: "Over 20,000 trees of a protected variety, late-ripening and in very high demand across Europe.",
+      lead: "Over 20,000 trees of a royalty-protected variety, late-ripening and the most in-demand on the international market for its organoleptic qualities.",
       paragraphs: [
-        "A balance of sweetness and acidity, high organoleptic quality and a good juice yield define the Nadorcott.",
-        "Its late ripening puts fruit on the market in a key commercial window, just as supply from other varieties drops off: a strategic advantage for Agromonte.",
+        "A balance of sweetness and acidity. It raises its organoleptic quality and its yield: characteristics that define the Nadorcott.",
+        "Its late ripening puts fruit on the market in a key commercial window, just as supply from other varieties drops off: a strategic advantage for the domestic and international market.",
         "It's grown with the same technology that optimises water, nutrition and resources, applying regenerative agriculture that cares for the surrounding environment.",
       ],
       stats: [
-        { value: "20,000+", label: "Nadorcott mandarin trees, a protected variety" },
         { value: "Late", label: "ripening window" },
         { value: "Europe", label: "main export market" },
+        { value: "20,000+", label: "Nadorcott mandarin trees, a royalty-protected variety" },
       ],
       gallery: {
         eyebrow: "In pictures",
@@ -536,16 +536,16 @@ export const translations = {
     oliva: {
       eyebrow: "Tradition and gourmet positioning",
       title: "Manzanilla Olive",
-      lead: "Close to 5,000 olive trees of one of Spain's most significant table olive varieties.",
+      lead: "Over 5,000 olive trees of one of Spain's most significant table olive varieties, grown in a unique setting: the Guadalquivir valley.",
       paragraphs: [
         "A rounded fruit with a prized calibre and firm texture, especially suited to table olives, with a balanced flavour profile and great versatility.",
         "Manzanilla accounts for around 36% of Spain's table olive production, second only to Hojiblanca. Spain is also the world's leading producer and exporter in this category.",
         "At Agromonte the olive grove links tradition and innovation: a historic variety grown with traceability, efficiency and regenerative agriculture.",
       ],
       stats: [
-        { value: "5,000", label: "Manzanilla olive trees" },
         { value: "~36%", label: "of Spain's table olive production" },
         { value: "Spain", label: "world's leading exporter" },
+        { value: "5,000", label: "Manzanilla olive trees" },
       ],
       gallery: {
         eyebrow: "In pictures",
@@ -602,7 +602,7 @@ export const translations = {
           text: "Sensors that measure each crop's real needs, plot by plot.",
         },
         {
-          title: "Automated irrigation",
+          title: "Smart home-automated irrigation",
           text: "Continuous adjustment of irrigation to optimise every drop of water used.",
         },
         {
@@ -777,9 +777,9 @@ export const translations = {
         },
       ],
       stats: [
+        { value: "Acco · Wonderful", label: "deux variétés complémentaires, l'une précoce et l'autre tardive" },
+        { value: "100 %", label: "système de tunnels unique, créant un microclimat et interagissant avec la biofaune" },
         { value: "25 000+", label: "grenadiers biologiques" },
-        { value: "Acco · Wonderful", label: "deux variétés complémentaires" },
-        { value: "100 %", label: "système de tunnels unique, créant un microclimat" },
       ],
       gallery: {
         eyebrow: "En images",
@@ -832,16 +832,16 @@ export const translations = {
     mandarina: {
       eyebrow: "Exclusivité et qualité",
       title: "Mandarine Nadorcott",
-      lead: "Plus de 20 000 arbres d'une variété protégée, à maturation tardive et très demandée en Europe.",
+      lead: "Plus de 20 000 arbres d'une variété protégée par redevance, à maturation tardive et la plus demandée du marché international pour ses qualités organoleptiques.",
       paragraphs: [
-        "Un équilibre entre douceur et acidité, une qualité organoleptique élevée et un bon rendement en jus caractérisent la Nadorcott.",
-        "Sa maturation tardive permet de disposer du fruit sur un créneau commercial clé, lorsque l'offre des autres variétés diminue : un avantage stratégique pour Agromonte.",
+        "Un équilibre entre douceur et acidité. Elle élève sa qualité organoleptique et son rendement : des caractéristiques qui définissent la Nadorcott.",
+        "Sa maturation tardive permet de disposer du fruit sur un créneau commercial clé, lorsque l'offre des autres variétés diminue : un avantage stratégique pour le marché national et international.",
         "Elle est cultivée avec le même système technologique qui optimise l'eau, la nutrition et les ressources, dans le cadre d'une agriculture régénérative qui préserve le milieu environnant.",
       ],
       stats: [
-        { value: "20 000+", label: "mandariniers Nadorcott, variété protégée" },
         { value: "Tardive", label: "fenêtre de maturation" },
         { value: "Europe", label: "principal marché d'exportation" },
+        { value: "20 000+", label: "mandariniers Nadorcott, variété protégée par redevance" },
       ],
       gallery: {
         eyebrow: "En images",
@@ -881,19 +881,19 @@ export const translations = {
     oliva: {
       eyebrow: "Tradition et positionnement gastronomique",
       title: "Olive Manzanilla",
-      lead: "Près de 5 000 oliviers d'une des variétés d'olive de table les plus importantes d'Espagne.",
+      lead: "Plus de 5 000 oliviers d'une des variétés d'olive de table les plus importantes d'Espagne, produite dans un cadre unique : la vallée du Guadalquivir.",
       paragraphs: [
         "Un fruit de forme arrondie, au calibre apprécié et à la texture ferme, particulièrement adapté à l'olive de table, avec un profil organoleptique équilibré et une grande polyvalence.",
         "La Manzanilla représente près de 36 % de la production nationale d'olive de table, juste derrière la Hojiblanca. L'Espagne est par ailleurs le premier producteur et exportateur mondial dans cette catégorie.",
         "Chez Agromonte, l'oliveraie relie tradition et innovation : une variété historique cultivée avec traçabilité, efficacité et agriculture régénérative.",
       ],
       stats: [
-        { value: "5 000", label: "oliviers Manzanilla" },
         {
           value: "~36 %",
           label: "de la production espagnole d'olive de table",
         },
         { value: "Espagne", label: "premier exportateur mondial" },
+        { value: "5 000", label: "oliviers Manzanilla" },
       ],
       gallery: {
         eyebrow: "En images",
@@ -950,7 +950,7 @@ export const translations = {
           text: "Des capteurs qui mesurent les besoins réels de chaque culture, parcelle par parcelle.",
         },
         {
-          title: "Irrigation automatisée",
+          title: "Irrigation domotisée",
           text: "Ajustement continu de l'irrigation pour optimiser chaque goutte d'eau utilisée.",
         },
         {

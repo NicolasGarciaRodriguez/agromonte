@@ -24,7 +24,11 @@ export default function useScrollLock(active) {
       if (lockCount === 0) {
         document.body.classList.remove("lock-scroll");
         document.body.style.top = "";
-        window.scrollTo(0, savedScrollY);
+        // The page's own `scroll-behavior: smooth` (index.css) would
+        // otherwise animate this jump-back — the body was pinned at
+        // scrollY 0 the whole time, so restoring the real position reads
+        // as a big, visible scroll even though the user never moved.
+        window.scrollTo({ top: savedScrollY, left: 0, behavior: "instant" });
       }
     };
   }, [active]);

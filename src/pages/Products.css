@@ -1,7 +1,48 @@
 .products-intro {
+  position: relative;
+  overflow: hidden;
   background: var(--c-green-900);
   color: var(--c-cream);
   padding-top: clamp(140px, 22vw, 200px);
+  /* Overrides the generic ".section" bottom padding (up to 160px, too much
+     combined with the tile selector's own top padding) with a smaller,
+     deliberate gap — just enough that the lead paragraph isn't crammed
+     against the tiles below. */
+  padding-bottom: clamp(40px, 6vw, 72px);
+}
+
+.products-intro-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.products-intro-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products-intro-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(180deg, rgba(14, 26, 16, 0.86) 0%, rgba(14, 26, 16, 0.72) 45%, #1a2a1b 100%);
+}
+
+.products-intro-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* The base .eyebrow (index.css) is sized/colored for plain backgrounds —
+   too small and low-contrast now that this one sits over a photo. Matches
+   the same treatment already used for Hero's and Hortícola's eyebrows. */
+.products-intro-content .eyebrow {
+  color: var(--c-gold);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.85);
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 
 .products-title {

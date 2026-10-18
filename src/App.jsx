@@ -17,9 +17,9 @@ const PAGE_TRANSITION_MS = 350;
 function scrollToId(id) {
   const el = document.getElementById(id);
   if (!el) return false;
-  // The page sections that own ScrollTrigger instances (Hero's parallax,
-  // every FruitSection's canvas scrub) just mounted or unmounted along
-  // with this navigation. GSAP batches its own re-measure of all trigger
+  // The page sections that own ScrollTrigger instances (Hero's parallax)
+  // just mounted or unmounted along with this navigation. GSAP batches
+  // its own re-measure of all trigger
   // positions a tick later, and that recalculation can itself nudge the
   // scroll position — which, if it happens *after* our scrollIntoView,
   // looks exactly like the link silently doing nothing. Forcing the

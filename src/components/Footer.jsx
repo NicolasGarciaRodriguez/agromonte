@@ -19,7 +19,7 @@ export default function Footer() {
           <Link to="/productos#granada">{links.granada}</Link>
           <Link to="/productos#mandarina">{links.mandarina}</Link>
           <Link to="/productos#oliva">{links.oliva}</Link>
-          <Link to="/#horticola">{links.horticola}</Link>
+          <Link to="/productos#horticola">{links.horticola}</Link>
           <Link to="/#tecnologia">{links.tecnologia}</Link>
           <Link to="/#contacto">{links.contacto}</Link>
         </nav>

@@ -7,7 +7,7 @@ export default function HorticulturalProject() {
   const h = t.horticultural;
 
   return (
-    <section id="horticola" className="section horticultural">
+    <section className="horticultural">
       <div className="horticultural-bg">
         <img src="/img/fotos/proyecto_horticola.jpeg" alt="" aria-hidden="true" />
       </div>

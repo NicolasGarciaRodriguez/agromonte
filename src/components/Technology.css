@@ -62,13 +62,33 @@
 }
 
 .tech-feature {
-  background: rgba(14, 26, 16, 0.65);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 260px;
   padding: 30px 22px;
-  transition: background 0.35s ease, filter 0.35s ease;
+  border: none;
+  margin: 0;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  /* Each card's own photo, with a colored tint layered on top for legibility
+     and to keep the per-card accent color identity. The tint color is set
+     per nth-child below; --tech-feature-bg is the photo, set inline per
+     card in Technology.jsx. */
+  background-image: linear-gradient(var(--tech-tint, rgba(14, 26, 16, 0.72)), var(--tech-tint, rgba(14, 26, 16, 0.72))), var(--tech-feature-bg);
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.35s ease, transform 0.2s ease;
 }
 
-.tech-feature:hover {
-  filter: brightness(1.25);
+.tech-feature:hover,
+.tech-feature:focus-visible {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
 }
 
 .tech-feature-index {
@@ -76,10 +96,11 @@
   font-size: 0.85rem;
   color: var(--c-gold);
   letter-spacing: 0.1em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .tech-feature:nth-child(1) {
-  background: rgba(201, 168, 76, 0.22);
+  --tech-tint: rgba(154, 123, 32, 0.55);
 }
 
 .tech-feature:nth-child(1) .tech-feature-index {
@@ -87,7 +108,7 @@
 }
 
 .tech-feature:nth-child(2) {
-  background: rgba(111, 168, 201, 0.22);
+  --tech-tint: rgba(45, 92, 117, 0.6);
 }
 
 .tech-feature:nth-child(2) .tech-feature-index {
@@ -95,7 +116,7 @@
 }
 
 .tech-feature:nth-child(3) {
-  background: rgba(183, 196, 106, 0.22);
+  --tech-tint: rgba(90, 104, 40, 0.6);
 }
 
 .tech-feature:nth-child(3) .tech-feature-index {
@@ -103,7 +124,7 @@
 }
 
 .tech-feature:nth-child(4) {
-  background: rgba(226, 105, 79, 0.22);
+  --tech-tint: rgba(150, 56, 38, 0.6);
 }
 
 .tech-feature:nth-child(4) .tech-feature-index {
@@ -111,7 +132,7 @@
 }
 
 .tech-feature:nth-child(5) {
-  background: rgba(245, 171, 82, 0.22);
+  --tech-tint: rgba(163, 101, 33, 0.6);
 }
 
 .tech-feature:nth-child(5) .tech-feature-index {
@@ -122,12 +143,115 @@
   margin-top: 14px;
   font-size: 1.05rem;
   color: var(--c-cream);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .tech-feature p {
   margin-top: 10px;
   font-size: 0.88rem;
-  color: rgba(246, 242, 231, 0.68);
+  color: rgba(246, 242, 231, 0.82);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  /* Caps every card's teaser at the same number of lines — some of these
+     descriptions run much longer than others, which was throwing off the
+     vertical centering: a near-full card reads as "stuck at the top" next
+     to one with room to spare, even though both are centered the same
+     way. The full text is still there in the modal. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+/* ---- expanded card modal ---- */
+
+.tech-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(10, 16, 11, 0.8);
+  backdrop-filter: blur(6px);
+}
+
+.tech-modal {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  max-height: 86vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  background: var(--c-green-900);
+  box-shadow: 0 40px 90px -30px rgba(0, 0, 0, 0.7);
+}
+
+.tech-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(14, 26, 16, 0.55);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-modal-close span {
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background: var(--c-cream);
+  border-radius: 2px;
+}
+
+.tech-modal-close span:first-child {
+  transform: rotate(45deg);
+}
+
+.tech-modal-close span:last-child {
+  transform: rotate(-45deg);
+}
+
+.tech-modal-visual {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.tech-modal-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tech-modal-body {
+  padding: 28px clamp(22px, 4vw, 36px) clamp(28px, 5vw, 40px);
+}
+
+.tech-modal-body .tech-feature-index {
+  text-shadow: none;
+}
+
+.tech-modal-body h3 {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  color: var(--c-cream);
+}
+
+.tech-modal-body p {
+  margin-top: 14px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(246, 242, 231, 0.8);
 }
 
 @media (max-width: 1080px) {
