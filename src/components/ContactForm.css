@@ -3,6 +3,11 @@
   color: var(--c-ink);
 }
 
+.contact-intro .eyebrow {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;

@@ -83,9 +83,9 @@
 .environment-gallery {
   margin-top: 54px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  max-width: 650px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 820px;
 }
 
 .environment-thumb {
@@ -112,6 +112,7 @@
   }
 
   .environment-gallery {
+    grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
   }
 }

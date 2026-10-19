@@ -5,15 +5,12 @@ import useScrollLock from "../hooks/useScrollLock.js";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 import "./Technology.css";
 
-// One representative photo per card. 01/02/05 are purpose-picked stock
-// photos; 03/04 still use library photos chosen for mood (precision
-// nutrition -> a single, closely-tended fruit; stress response -> the
-// actual beneficial insect used for pest control).
+// One representative photo per card, all purpose-picked stock photos.
 const FEATURE_IMAGES = [
   "card-01.jpg",
   "card-02.jpg",
-  "una-granada-primer-plano.jpeg",
-  "bicho-para-combatir-plagas-primer-plano.jpeg",
+  "card-03.jpg",
+  "card-04.jpg",
   "card-05.jpg",
 ];
 

@@ -58,8 +58,8 @@ export const translations = {
     },
     products: {
       eyebrow: "Nuestros productos",
-      title: "Tres cultivos, una misma exigencia",
-      lead: "Granada ecológica, mandarina Nadorcott y aceituna Manzanilla: tres productos de alto valor cultivados bajo el mismo compromiso con la calidad, la tecnología y el territorio.",
+      title: "Producir hoy cuidando el mañana",
+      lead: "Nuestra agricultura se basa en el nivel de exigencia, el secreto está en la interacción con la biodiversidad, la salud del suelo y la máxima calidad organoléptica, cultivado bajo el mismo compromiso.",
       scrollHint: "Desliza para descubrir",
     },
     granada: {
@@ -301,7 +301,7 @@ export const translations = {
       title: "Cuidar el entorno no es un añadido: es el método",
       text: "Riego tecnificado, sensorización y sistemas de protección del cultivo reducen el consumo de agua hasta niveles técnicamente optimizados. La agricultura regenerativa mejora, además, la salud del suelo y favorece el almacenamiento de carbono en el propio ecosistema agrícola. Nuestro compromiso no se limita a «contaminar menos»: perseguimos conservar los recursos, regenerar el suelo y aumentar la biodiversidad mientras producimos alimentos de calidad.",
       stats: [
-        { value: "50.000+", label: "árboles en masa forestal, fijando CO₂" },
+        { value: "50.000+", label: "árboles con cubierta vegetal, fijando el CO₂" },
         {
           value: "Riego de precisión",
           label: "sensorización que ajusta el agua a la necesidad real",
