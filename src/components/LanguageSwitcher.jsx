@@ -6,7 +6,7 @@ export default function LanguageSwitcher() {
   const { lang, setLang } = useLanguage();
 
   return (
-    <div className="lang-switcher" role="group" aria-label="Idioma / Language / Langue">
+    <div className="lang-switcher" role="group" aria-label="Idioma / Language / Langue / Sprache / Idioma">
       {LANGUAGES.map((l) => (
         <button
           key={l.code}

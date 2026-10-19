@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 
 const SITE_URL = "https://www.agromonte.es";
-const OG_LOCALES = { es: "es_ES", en: "en_US", fr: "fr_FR" };
+const OG_LOCALES = { es: "es_ES", en: "en_US", fr: "fr_FR", de: "de_DE", pt: "pt_PT" };
 
 const PAGE_KEY_BY_PATH = {
   "/": "home",

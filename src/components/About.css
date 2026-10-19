@@ -1,5 +1,6 @@
 .about {
-  background: var(--c-cream);
+  background: var(--c-green-700);
+  color: var(--c-cream);
   padding-top: clamp(40px, 6vw, 70px);
 }
 
@@ -8,6 +9,7 @@
 }
 
 .about-intro .eyebrow {
+  color: var(--c-gold);
   font-size: 1.1rem;
   font-weight: 800;
 }
@@ -15,7 +17,7 @@
 .about-title {
   margin-top: 16px;
   font-size: clamp(2.2rem, 4.6vw, 3.4rem);
-  color: var(--c-green-900);
+  color: var(--c-cream);
   max-width: 16ch;
 }
 
@@ -30,11 +32,11 @@
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-style: italic;
-  color: var(--c-green-700);
+  color: var(--c-gold);
 }
 
 .about-text {
-  color: #3d4438;
+  color: rgba(246, 242, 231, 0.82);
   font-size: 1.02rem;
 }
 
@@ -46,11 +48,17 @@
 }
 
 .pillar-card {
-  background: #fff;
+  background: rgba(246, 242, 231, 0.06);
   border-radius: 20px;
   padding: 22px 22px 28px;
-  box-shadow: 0 30px 60px -45px rgba(16, 20, 15, 0.4);
-  border: 1px solid rgba(16, 20, 15, 0.06);
+  box-shadow: 0 30px 60px -45px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(246, 242, 231, 0.14);
+  backdrop-filter: blur(6px);
+  transition: background 0.4s var(--ease-out);
+}
+
+.pillar-card:hover {
+  background: rgba(246, 242, 231, 0.1);
 }
 
 .pillar-img {
@@ -74,12 +82,12 @@
 
 .pillar-card h3 {
   font-size: 1.25rem;
-  color: var(--c-green-900);
+  color: var(--c-cream);
   margin-bottom: 10px;
 }
 
 .pillar-card p {
-  color: #565f50;
+  color: rgba(246, 242, 231, 0.75);
   font-size: 0.95rem;
 }
 

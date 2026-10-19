@@ -2,6 +2,8 @@ export const LOCALES = {
   es: "es-ES",
   en: "en-US",
   fr: "fr-FR",
+  de: "de-DE",
+  pt: "pt-PT",
 };
 
 export const translations = {
@@ -59,7 +61,7 @@ export const translations = {
     products: {
       eyebrow: "Nuestros productos",
       title: "Producir hoy cuidando el mañana",
-      lead: "Nuestra agricultura se basa en el nivel de exigencia, el secreto está en la interacción con la biodiversidad, la salud del suelo y la máxima calidad organoléptica, cultivado bajo el mismo compromiso.",
+      lead: "El secreto de nuestra agricultura se basa en el nivel de exigencia, en la interacción con la biodiversidad, la salud del suelo y la máxima calidad organoléptica, cultivado bajo el mismo compromiso.",
       scrollHint: "Desliza para descubrir",
     },
     granada: {
@@ -1052,10 +1054,712 @@ export const translations = {
         `© ${year} Agromonte · Agriculture régénérative, biologique et technologique.`,
     },
   },
+  de: {
+    nav: {
+      home: "Startseite",
+      products: "Produkte",
+      contact: "Kontakt",
+    },
+    seo: {
+      home: {
+        title: "Agromonte · Heute produzieren, das Morgen bewahren",
+        description: "Regenerative, ökologische und technologisierte Landwirtschaft im Guadalquivir-Tal. Granatapfel, Mandarine Nadorcott und Olive Manzanilla in höchster Qualität.",
+      },
+      products: {
+        title: "Produkte · Ökologischer Granatapfel, Mandarine und Olive | Agromonte",
+        description: "Ökologischer Granatapfel, Mandarine Nadorcott und Olive Manzanilla: drei hochwertige Produkte, angebaut mit demselben Engagement für Qualität, Technologie und Region.",
+      },
+    },
+    hero: {
+      eyebrow: "Regenerative Landwirtschaft · Ökologisch · Technologisiert",
+      tagline: "Heute produzieren, das Morgen bewahren.",
+      desc: "Auf mehr als 200 Hektar wachsen Granatapfel, Mandarine Nadorcott und Olive Manzanilla nach demselben Prinzip: Rentabilität und die Regeneration des Landes verstärken sich gegenseitig, statt miteinander zu konkurrieren. Wir interagieren mit der Umwelt an einem der symbolträchtigsten Orte Europas, dem Guadalquivir-Tal neben den Marismas von Doñana.",
+      ctaPrimary: "Produkte ansehen",
+      ctaSecondary: "Kontaktieren Sie uns",
+      scroll: "Scrollen",
+    },
+    stats: [
+      { label: "Hektar Anbaufläche" },
+      { label: "ökologische Granatapfelbäume" },
+      { label: "Mandarinenbäume Nadorcott" },
+      { label: "Olivenbäume Manzanilla" },
+      { label: "Bäume in Waldfläche" },
+    ],
+    about: {
+      eyebrow: "Das Projekt",
+      title: "Eine neue Art, Landwirtschaft zu verstehen",
+      lead: "Agromonte kombiniert mehrjährige Hochwertkulturen, neue ökologische Gemüseanbauflächen, Automatisierung und Sensorik mit einer aktiven Strategie zum Schutz der Umwelt.",
+      text: "Es geht nicht nur darum, nach ökologischen Kriterien zu produzieren: Wir entwickeln ein integrales Modell regenerativer Landwirtschaft, in dem Boden, Wasser, Biodiversität und Ressourceneffizienz Teil des Produktionssystems selbst sind. Nachhaltigkeit ist kein Zusatz, sondern die Achse, um die wir den gesamten Betrieb gestalten. So positioniert sich Agromonte als Referenzprojekt innerhalb der spanischen ökologischen Landwirtschaft mit internationaler Ausrichtung.",
+      pillars: [
+        {
+          title: "Lebendiger Boden, aktiver Produktionsfaktor",
+          text: "Der Boden ist nicht mehr nur eine Unterlage. Wir pflegen seine Struktur und biologische Aktivität, erhalten die organische Substanz und fördern Systeme, die Kohlenstoff speichern können. Ein ausgeglichener Boden hält mehr Wasser und macht die Kulturen widerstandsfähiger.",
+        },
+        {
+          title: "Präzisionsbewässerung",
+          text: "Sensoren, Automatisierung und das für den Granatapfelanbau entwickelte Tunnelsystem passen die Bewässerung an den tatsächlichen Bedarf jeder Kultur an, verringern Hitzestress und vermeiden den unnötigen Verbrauch einer im Mittelmeerraum strategischen Ressource.",
+        },
+        {
+          title: "Biodiversität und Umwelt",
+          text: "Mehr als 50.000 Bäume in Waldfläche und ein Management, das die Tierwelt fördert, machen den Betrieb zu einem produktiven Ökosystem, in dem landwirtschaftliche Tätigkeit und Umweltschutz gemeinsam voranschreiten.",
+        },
+      ],
+    },
+    products: {
+      eyebrow: "Unsere Produkte",
+      title: "Heute produzieren, das Morgen bewahren",
+      lead: "Das Geheimnis unserer Landwirtschaft liegt im hohen Anspruch, in der Interaktion mit der Biodiversität, der Bodengesundheit und der maximalen sensorischen Qualität, angebaut mit demselben Engagement.",
+      scrollHint: "Zum Entdecken wischen",
+    },
+    granada: {
+      eyebrow: "Strategisches Produkt",
+      title: "Ökologischer Granatapfel",
+      lead: "Mehr als 25.000 Granatapfelbäume in ökologischem Anbau. Landesweiter Referenzbetrieb mit Export in ganz Europa.",
+      paragraphs: [
+        "Unser Tunnelsystem kontrolliert die Sonneneinstrahlung und schafft ein stabiles Mikroklima, wodurch Hitzestress reduziert wird: weniger Wasser, weniger Sonnenbrandschäden an der Schale und eine gleichmäßigere Reifung.",
+        "Granatäpfel sind reich an phenolischen Verbindungen und Polyphenolen — darunter Anthocyane — sowie an Vitamin C und Ballaststoffen. Der Granatapfel weckt ein wachsendes Verbraucherinteresse wegen seiner antioxidativen und krebshemmenden Eigenschaften.",
+      ],
+      varieties: [
+        {
+          name: "Acco",
+          text: "Frühe Reifung, intensiv rote Schale und ausgewogener Geschmack.",
+        },
+        {
+          name: "Wonderful",
+          text: "Internationale Anerkennung, große Früchte, Saftigkeit und reichlich phenolische Verbindungen.",
+        },
+      ],
+      stats: [
+        { value: "Acco · Wonderful", label: "zwei sich ergänzende Sorten, eine früh und eine spät reifend" },
+        {
+          value: "100%",
+          label: "einzigartiges Tunnelsystem, das ein Mikroklima schafft und mit der Biofauna interagiert",
+        },
+        { value: "25.000+", label: "ökologische Granatapfelbäume" },
+      ],
+      gallery: {
+        eyebrow: "In Bildern",
+        title: "Der Granatapfel, von der Blüte bis zum Anbautunnel",
+        photos: [
+          {
+            src: "sistema-de-tuneles-granadas-plano-general.jpeg",
+            alt: "Tunnelsystem über den Granatapfelbäumen, Gesamtansicht",
+          },
+          {
+            src: "sistema-de-tuneles-granadas-plano-medio.jpeg",
+            alt: "Tunnelsystem über den Granatapfelbäumen, Mittelansicht",
+          },
+          {
+            src: "granadas-primer-plano.jpeg",
+            alt: "Ökologische Granatäpfel in Nahaufnahme",
+          },
+          {
+            src: "granadas-primer-plano-2.jpeg",
+            alt: "Detail reifer Granatäpfel am Baum",
+          },
+          { src: "granadas-plano-medio.jpeg", alt: "Granatapfelbäume in Mittelansicht" },
+          {
+            src: "granadas-plano-medio-v2.jpeg",
+            alt: "Ökologische Granatapfelbäume auf dem Betrieb",
+          },
+          {
+            src: "granadas-plano-medio-v3.jpeg",
+            alt: "Reihe von Granatapfelbäumen in Produktion",
+          },
+          {
+            src: "una-granada-primer-plano.jpeg",
+            alt: "Ganzer Granatapfel in Nahaufnahme",
+          },
+          {
+            src: "una-granada-abierta-primer-plano.jpeg",
+            alt: "Geöffneter Granatapfel mit sichtbaren Kernen",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v2.jpeg",
+            alt: "Detail der Granatapfelkerne",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v3.jpeg",
+            alt: "Geöffneter Granatapfel, Nahaufnahme",
+          },
+        ],
+      },
+    },
+    mandarina: {
+      eyebrow: "Exklusivität und Qualität",
+      title: "Mandarine Nadorcott",
+      lead: "Mehr als 20.000 Bäume einer lizenzpflichtigen, spät reifenden Sorte, die auf dem internationalen Markt wegen ihrer sensorischen Eigenschaften am meisten nachgefragt wird.",
+      paragraphs: [
+        "Ausgewogenheit zwischen Süße und Säure. Sie steigert ihre sensorische Qualität und ihren Ertrag: Eigenschaften, die die Nadorcott auszeichnen.",
+        "Ihre späte Reifung ermöglicht es, Früchte in einem entscheidenden Vermarktungsfenster anzubieten, wenn das Angebot anderer Sorten zurückgeht: ein strategischer Vorteil für den nationalen und internationalen Markt.",
+        "Sie wird mit demselben Technologiesystem angebaut, das Wasser, Nährstoffe und Ressourcen optimiert; wir wenden eine regenerative Landwirtschaft an, die die Umwelt schützt.",
+      ],
+      stats: [
+        { value: "Spät", label: "Reifefenster" },
+        { value: "Europa", label: "wichtigster Exportmarkt" },
+        { value: "20.000+", label: "Mandarinenbäume Nadorcott, lizenzpflichtige Sorte" },
+      ],
+      gallery: {
+        eyebrow: "In Bildern",
+        title: "Mandarine Nadorcott",
+        photos: [
+          {
+            src: "mandarinas-primer-plano.jpeg",
+            alt: "Mandarinen Nadorcott in Nahaufnahme",
+          },
+          {
+            src: "mandarinas-primer-plano-2.jpeg",
+            alt: "Detail von Mandarinen am Baum",
+          },
+          {
+            src: "mandarinas-primer-plano-3.jpeg",
+            alt: "Reife Mandarinen Nadorcott",
+          },
+          {
+            src: "mandarinas-primer-plano-v2.jpeg",
+            alt: "Mandarinenbüschel in Nahaufnahme",
+          },
+          {
+            src: "mandarinas-plano-medio.jpeg",
+            alt: "Mandarinenbäume in Mittelansicht",
+          },
+          {
+            src: "mandarinas-plano-medio-v2.jpeg",
+            alt: "Mandarinenplantage",
+          },
+          {
+            src: "mandarinas-plano-aereo.jpeg",
+            alt: "Mandarinenplantage aus der Vogelperspektive",
+          },
+        ],
+      },
+    },
+    oliva: {
+      eyebrow: "Tradition und Gourmet-Positionierung",
+      title: "Olive Manzanilla",
+      lead: "Mehr als 5.000 Olivenbäume einer der bedeutendsten Tafelolivensorten Spaniens, angebaut in einer einzigartigen Umgebung wie dem Guadalquivir-Tal.",
+      paragraphs: [
+        "Runde Frucht mit geschätzter Größe und fester Textur, besonders geeignet als Tafelolive, mit ausgewogenem sensorischem Profil und großer Vielseitigkeit.",
+        "Die Manzanilla macht etwa 36 % der spanischen Tafelolivenproduktion aus und liegt damit nur hinter der Hojiblanca. Spanien ist zudem weltweit führend in Produktion und Export dieser Kategorie.",
+        "Bei Agromonte verbindet der Olivenhain Tradition und Innovation: eine traditionsreiche Sorte, angebaut mit Rückverfolgbarkeit, Effizienz und regenerativer Landwirtschaft.",
+      ],
+      stats: [
+        {
+          value: "~36%",
+          label: "der spanischen Tafelolivenproduktion",
+        },
+        { value: "Spanien", label: "weltweit führend im Export" },
+        { value: "5.000", label: "Olivenbäume Manzanilla" },
+      ],
+      gallery: {
+        eyebrow: "In Bildern",
+        title: "Die Olive Manzanilla",
+        photos: [
+          {
+            src: "olivos-primer-plano.jpeg",
+            alt: "Oliven Manzanilla in Nahaufnahme",
+          },
+          {
+            src: "olivos-plano-general.jpeg",
+            alt: "Olivenhain Manzanilla, Gesamtansicht",
+          },
+          {
+            src: "olivos-plano-general-v2.jpeg",
+            alt: "Reihen des Olivenhains Manzanilla",
+          },
+          {
+            src: "olivos-plano-general-v3.jpeg",
+            alt: "Olivenhain Manzanilla in der Tiefe",
+          },
+        ],
+      },
+    },
+    horticultural: {
+      eyebrow: "Neues Projekt",
+      title: "Mehr als 100 Hektar ökologische und regenerative Landwirtschaft",
+      lead: "Bei Agromonte wachsen wir weiter und setzen auf eine zukunftsfähige Landwirtschaft. Wir entwickeln ein neues Gemüseanbauprojekt auf mehr als 100 Hektar nach den Prinzipien der ökologischen und regenerativen Landwirtschaft, das Nachhaltigkeit, Innovation und Effizienz vereint.",
+      crops: ["Tomate", "Paprika", "Kartoffel", "Süßkartoffel", "Karotte"],
+      blocks: [
+        {
+          title: "Anbauen, regenerieren und verbessern",
+          text: "Das Projekt entstand aus einer klaren Idee: Lebensmittel höchster Qualität zu produzieren und gleichzeitig den Boden zu pflegen und zu verbessern. Wir arbeiten mit Fruchtfolgen, der Verbesserung von Bodenfruchtbarkeit und Bodenleben, effizientem Wassereinsatz und Praktiken, die die Biodiversität fördern.",
+        },
+        {
+          title: "Technologie und Effizienz",
+          text: "Der Philosophie von Agromonte folgend integrieren wir effiziente Bewässerungssysteme, Kontrolle und Überwachung der Kulturen sowie ein zunehmend datengestütztes Management: messen, um zu verbessern, Ressourcen optimieren und eine nachhaltigere, produktivere und wettbewerbsfähigere Landwirtschaft erreichen.",
+        },
+      ],
+      stats: [
+        { value: "100+", label: "Hektar" },
+        { value: "5", label: "Kulturen" },
+        { value: "1", label: "dieselbe Philosophie" },
+      ],
+      tagline: "Heute anbauen, an morgen denken.",
+    },
+    technology: {
+      eyebrow: "Technologie & Hausautomation",
+      title: "Präzisionslandwirtschaft im Dienst des Anbaus",
+      lead: "Die Hausautomation ermöglicht die koordinierte Steuerung von Bewässerung, Nährstoffversorgung und Umweltbedingungen des gesamten Betriebs. Die Technologie ersetzt nicht das landwirtschaftliche Wissen, sie verstärkt es.",
+      features: [
+        {
+          title: "Echtzeit-Überwachung",
+          text: "Sensoren, die den tatsächlichen Bedarf jeder Kultur parzellengenau messen.",
+        },
+        {
+          title: "Automatisierte Bewässerung",
+          text: "Kontinuierliche Anpassung der Bewässerung, um jeden eingesetzten Wassertropfen zu optimieren.",
+        },
+        {
+          title: "Präzisionsernährung",
+          text: "Kontrolle und Anpassung der Pflanzenernährung je nach Zustand jeder Pflanze.",
+        },
+        {
+          title: "Reaktion auf Stress",
+          text: "Überwachung von Umweltvariablen und frühzeitige Reaktion auf kritische Situationen, wie die Pflanzendecke, die CO₂ aus der Atmosphäre bindet und in Stickstoff für die Pflanze umwandelt.",
+        },
+        {
+          title: "Datenbasierte Entscheidungen",
+          text: "Weniger Betriebsfehler dank einer Digitalisierung, die auf Echtzeitinformationen beruht. Wir antizipieren Probleme und maximieren die Produktion.",
+        },
+      ],
+    },
+    certifications: {
+      eyebrow: "Garantien",
+      title: "Zertifizierungen, die jeden Hektar absichern",
+      certs: [
+        {
+          name: "Sohiscert",
+          text: "Bestätigung der Einhaltung der Anforderungen an die ökologische Produktion.",
+        },
+        {
+          name: "GLOBALG.A.P.",
+          text: "Internationaler Referenzstandard für gute landwirtschaftliche Praxis, Lebensmittelsicherheit und Betriebsführung.",
+        },
+        {
+          name: "GRASP",
+          text: "Integration sozialer und arbeitsrechtlicher Kriterien in die Betriebsführung.",
+        },
+        {
+          name: "SPRING",
+          text: "Besonderes Augenmerk auf ein verantwortungsvolles und effizientes Wassermanagement.",
+        },
+      ],
+    },
+    environment: {
+      eyebrow: "Wasserfußabdruck & CO2-Fußabdruck",
+      title: "Die Umwelt zu schützen ist kein Zusatz: es ist die Methode",
+      text: "Technisierte Bewässerung, Sensorik und Pflanzenschutzsysteme senken den Wasserverbrauch auf technisch optimierte Werte. Die regenerative Landwirtschaft verbessert zudem die Bodengesundheit und fördert die Kohlenstoffspeicherung im landwirtschaftlichen Ökosystem selbst. Unser Engagement beschränkt sich nicht darauf, „weniger zu verschmutzen“: Wir streben danach, Ressourcen zu erhalten, den Boden zu regenerieren und die Biodiversität zu steigern, während wir hochwertige Lebensmittel produzieren.",
+      stats: [
+        { value: "50.000+", label: "Bäume mit Pflanzendecke, die CO₂ binden" },
+        {
+          value: "Präzisionsbewässerung",
+          label: "Sensorik, die das Wasser an den tatsächlichen Bedarf anpasst",
+        },
+        {
+          value: "Biologische Kontrolle",
+          label: "Nutzfauna für die natürliche Schädlingsbekämpfung",
+        },
+      ],
+      galleryAlt: [
+        "Biene bestäubt eine Blüte auf dem Betrieb",
+        "Vollständig geöffnete Granatapfelblüte in Nahaufnahme",
+        "Nützling zur biologischen Schädlingsbekämpfung",
+        "Nutzfauna für die biologische Schädlingsbekämpfung",
+        "Granatapfelblüte in Nahaufnahme, kurz vor dem Aufblühen",
+      ],
+    },
+    contact: {
+      eyebrow: "Kontakt",
+      title: "Sprechen wir über Granatapfel, Mandarine und Olive",
+      text: "Sind Sie Exporteur, Vertriebspartner oder möchten Sie einfach mehr über das Projekt Agromonte erfahren? Schreiben Sie uns, wir antworten so schnell wie möglich.",
+      metaExplotacionLabel: "Betrieb",
+      metaExplotacionValue:
+        "200+ Hektar · regenerative und ökologische Landwirtschaft",
+      metaProductosLabel: "Produkte",
+      metaProductosValue:
+        "Ökologischer Granatapfel · Mandarine Nadorcott · Olive Manzanilla · Gemüseanbau",
+      formName: "Name",
+      formEmail: "E-Mail",
+      formSubject: "Betreff",
+      formSubjectPlaceholder: "Z. B. Vertrieb von ökologischem Granatapfel",
+      formMessage: "Nachricht",
+      submitIdle: "Nachricht senden",
+      submitSending: "Wird gesendet…",
+      statusOk: "Vielen Dank, wir haben Ihre Nachricht erhalten. Wir melden uns in Kürze.",
+      statusError:
+        "Die Nachricht konnte nicht gesendet werden. Versuchen Sie es erneut oder schreiben Sie uns direkt an unsere E-Mail-Adresse.",
+    },
+    footer: {
+      tagline: "Heute produzieren, das Morgen bewahren.",
+      links: {
+        proyecto: "Projekt",
+        granada: "Granatapfel",
+        mandarina: "Mandarine",
+        oliva: "Olive",
+        horticola: "Gemüseanbau",
+        tecnologia: "Technologie",
+        contacto: "Kontakt",
+      },
+      copy: (year) =>
+        `© ${year} Agromonte · Regenerative, ökologische und technologisierte Landwirtschaft.`,
+    },
+  },
+  pt: {
+    nav: {
+      home: "Início",
+      products: "Produtos",
+      contact: "Contacto",
+    },
+    seo: {
+      home: {
+        title: "Agromonte · Produzir hoje, cuidando do amanhã",
+        description: "Agricultura regenerativa, biológica e tecnológica no vale do Guadalquivir. Romã, tangerina Nadorcott e azeitona Manzanilla de máxima qualidade.",
+      },
+      products: {
+        title: "Produtos · Romã, tangerina e azeitona biológicas | Agromonte",
+        description: "Romã biológica, tangerina Nadorcott e azeitona Manzanilla: três produtos de alto valor cultivados com o mesmo compromisso com a qualidade, a tecnologia e o território.",
+      },
+    },
+    hero: {
+      eyebrow: "Agricultura regenerativa · Biológica · Tecnológica",
+      tagline: "Produzir hoje, cuidando do amanhã.",
+      desc: "Mais de 200 hectares onde a romã, a tangerina Nadorcott e a azeitona Manzanilla crescem segundo o mesmo princípio: a rentabilidade e a regeneração do território reforçam-se, não competem entre si. Interagimos com o meio ambiente num dos locais mais emblemáticos de toda a Europa, o vale do Guadalquivir junto às marismas de Doñana.",
+      ctaPrimary: "Ver produtos",
+      ctaSecondary: "Contacte-nos",
+      scroll: "Deslize",
+    },
+    stats: [
+      { label: "hectares de exploração" },
+      { label: "romãzeiras biológicas" },
+      { label: "tangerineiras Nadorcott" },
+      { label: "oliveiras Manzanilla" },
+      { label: "árvores em massa florestal" },
+    ],
+    about: {
+      eyebrow: "O projeto",
+      title: "Uma nova forma de entender a agricultura",
+      lead: "A Agromonte combina culturas lenhosas de alto valor, novas áreas hortícolas biológicas, automação e sensorização com uma estratégia ativa de conservação ambiental.",
+      text: "Não se trata apenas de produzir segundo critérios biológicos: desenvolvemos um modelo integral de agricultura regenerativa em que o solo, a água, a biodiversidade e a eficiência dos recursos fazem parte do próprio sistema produtivo. A sustentabilidade não é um extra; é o eixo sobre o qual desenhamos toda a exploração. Assim, a Agromonte posiciona-se como um projeto de referência dentro da agricultura biológica espanhola, com vocação internacional.",
+      pillars: [
+        {
+          title: "Solo vivo, ativo produtivo",
+          text: "O solo deixa de ser um simples suporte. Cuidamos da sua estrutura e atividade biológica, conservamos a matéria orgânica e favorecemos sistemas capazes de armazenar carbono. Um solo equilibrado retém mais água e torna as culturas mais resilientes.",
+        },
+        {
+          title: "Água de precisão",
+          text: "Sensores, automação e o sistema de túneis desenvolvido para a romãzeira ajustam a rega à necessidade real de cada cultura, reduzem o stress térmico e evitam consumos desnecessários de um recurso estratégico no Mediterrâneo.",
+        },
+        {
+          title: "Biodiversidade e envolvente",
+          text: "Mais de 50.000 árvores em massa florestal e uma gestão que promove a vida selvagem tornam a exploração num ecossistema produtivo, onde a atividade agrícola e a conservação ambiental avançam juntas.",
+        },
+      ],
+    },
+    products: {
+      eyebrow: "Os nossos produtos",
+      title: "Produzir hoje, cuidando do amanhã",
+      lead: "O segredo da nossa agricultura baseia-se no nível de exigência, na interação com a biodiversidade, a saúde do solo e a máxima qualidade organolética, cultivado sob o mesmo compromisso.",
+      scrollHint: "Deslize para descobrir",
+    },
+    granada: {
+      eyebrow: "Produto estratégico",
+      title: "Romã biológica",
+      lead: "Mais de 25.000 romãzeiras em produção biológica. Referência nacional, com exportação para toda a Europa.",
+      paragraphs: [
+        "O nosso sistema de túneis controla a radiação solar e cria um microclima estável, reduzindo o stress térmico: menos água, menos queimaduras na casca e uma maturação mais uniforme.",
+        "As romãs são ricas em compostos fenólicos e polifenóis — entre eles antocianinas — além de vitamina C e fibra; a romã desperta um interesse crescente do consumidor pelas suas propriedades antioxidantes e anticancerígenas.",
+      ],
+      varieties: [
+        {
+          name: "Acco",
+          text: "Maturação precoce, casca vermelha intensa e sabor equilibrado.",
+        },
+        {
+          name: "Wonderful",
+          text: "Reconhecimento internacional, grande calibre, suculência e abundância de compostos fenólicos.",
+        },
+      ],
+      stats: [
+        { value: "Acco · Wonderful", label: "duas variedades complementares, uma precoce e outra tardia" },
+        {
+          value: "100%",
+          label: "sistema único de túneis, criando um microclima e interagindo com a biofauna",
+        },
+        { value: "25.000+", label: "romãzeiras biológicas" },
+      ],
+      gallery: {
+        eyebrow: "Em imagens",
+        title: "A romã, da flor ao túnel de cultivo",
+        photos: [
+          {
+            src: "sistema-de-tuneles-granadas-plano-general.jpeg",
+            alt: "Sistema de túneis sobre as romãzeiras, plano geral",
+          },
+          {
+            src: "sistema-de-tuneles-granadas-plano-medio.jpeg",
+            alt: "Sistema de túneis sobre as romãzeiras, plano médio",
+          },
+          {
+            src: "granadas-primer-plano.jpeg",
+            alt: "Romãs biológicas em primeiro plano",
+          },
+          {
+            src: "granadas-primer-plano-2.jpeg",
+            alt: "Detalhe de romãs maduras na árvore",
+          },
+          { src: "granadas-plano-medio.jpeg", alt: "Romãzeiras em plano médio" },
+          {
+            src: "granadas-plano-medio-v2.jpeg",
+            alt: "Romãzeiras biológicas na exploração",
+          },
+          {
+            src: "granadas-plano-medio-v3.jpeg",
+            alt: "Fileira de romãzeiras em produção",
+          },
+          {
+            src: "una-granada-primer-plano.jpeg",
+            alt: "Romã inteira em primeiro plano",
+          },
+          {
+            src: "una-granada-abierta-primer-plano.jpeg",
+            alt: "Romã aberta mostrando as suas sementes",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v2.jpeg",
+            alt: "Detalhe das sementes da romã",
+          },
+          {
+            src: "una-granada-abierta-primer-plano-v3.jpeg",
+            alt: "Romã aberta, primeiro plano",
+          },
+        ],
+      },
+    },
+    mandarina: {
+      eyebrow: "Exclusividade e qualidade",
+      title: "Tangerina Nadorcott",
+      lead: "Mais de 20.000 árvores de uma variedade protegida por royalty, de maturação tardia e a mais procurada no mercado internacional pelas suas características organoléticas.",
+      paragraphs: [
+        "Equilíbrio entre doçura e acidez. Eleva a sua qualidade organolética e o seu rendimento: características que definem a Nadorcott.",
+        "A sua maturação tardia permite dispor de fruta numa janela comercial fundamental, quando a oferta de outras variedades diminui: uma vantagem estratégica para o mercado nacional e internacional.",
+        "É cultivada com o mesmo sistema tecnológico que otimiza água, nutrição e recursos; aplicamos uma agricultura regenerativa que cuida do ambiente.",
+      ],
+      stats: [
+        { value: "Tardia", label: "janela de maturação" },
+        { value: "Europa", label: "principal mercado de exportação" },
+        { value: "20.000+", label: "tangerineiras Nadorcott, variedade protegida por royalty" },
+      ],
+      gallery: {
+        eyebrow: "Em imagens",
+        title: "Tangerina Nadorcott",
+        photos: [
+          {
+            src: "mandarinas-primer-plano.jpeg",
+            alt: "Tangerinas Nadorcott em primeiro plano",
+          },
+          {
+            src: "mandarinas-primer-plano-2.jpeg",
+            alt: "Detalhe de tangerinas na árvore",
+          },
+          {
+            src: "mandarinas-primer-plano-3.jpeg",
+            alt: "Tangerinas Nadorcott maduras",
+          },
+          {
+            src: "mandarinas-primer-plano-v2.jpeg",
+            alt: "Cacho de tangerinas em primeiro plano",
+          },
+          {
+            src: "mandarinas-plano-medio.jpeg",
+            alt: "Tangerineiras em plano médio",
+          },
+          {
+            src: "mandarinas-plano-medio-v2.jpeg",
+            alt: "Plantação de tangerineiras",
+          },
+          {
+            src: "mandarinas-plano-aereo.jpeg",
+            alt: "Plantação de tangerineiras vista aérea",
+          },
+        ],
+      },
+    },
+    oliva: {
+      eyebrow: "Tradição e posicionamento gourmet",
+      title: "Azeitona Manzanilla",
+      lead: "Mais de 5.000 oliveiras de uma das variedades de azeitona de mesa mais relevantes de Espanha, produzida num ambiente único como é o vale do Guadalquivir.",
+      paragraphs: [
+        "Fruto de forma arredondada, calibre apreciado e textura firme, especialmente adequado para azeitona de mesa, com um perfil organolético equilibrado e grande versatilidade.",
+        "A Manzanilla representa cerca de 36% da produção nacional de azeitona de mesa, ficando apenas atrás da Hojiblanca. A Espanha é, além disso, líder mundial na produção e exportação desta categoria.",
+        "Na Agromonte, o olival une tradição e inovação: uma variedade histórica cultivada com rastreabilidade, eficiência e agricultura regenerativa.",
+      ],
+      stats: [
+        {
+          value: "~36%",
+          label: "da produção espanhola de azeitona de mesa",
+        },
+        { value: "Espanha", label: "líder mundial em exportação" },
+        { value: "5.000", label: "oliveiras Manzanilla" },
+      ],
+      gallery: {
+        eyebrow: "Em imagens",
+        title: "A azeitona Manzanilla",
+        photos: [
+          {
+            src: "olivos-primer-plano.jpeg",
+            alt: "Azeitonas Manzanilla em primeiro plano",
+          },
+          {
+            src: "olivos-plano-general.jpeg",
+            alt: "Olival Manzanilla, plano geral",
+          },
+          {
+            src: "olivos-plano-general-v2.jpeg",
+            alt: "Fileiras do olival Manzanilla",
+          },
+          {
+            src: "olivos-plano-general-v3.jpeg",
+            alt: "Olival Manzanilla visto em profundidade",
+          },
+        ],
+      },
+    },
+    horticultural: {
+      eyebrow: "Novo projeto",
+      title: "Mais de 100 hectares de agricultura biológica e regenerativa",
+      lead: "Na Agromonte continuamos a crescer e a apostar numa agricultura de futuro. Desenvolvemos um novo projeto hortícola com mais de 100 hectares, concebido segundo os princípios da agricultura biológica e regenerativa, combinando sustentabilidade, inovação e eficiência.",
+      crops: ["Tomate", "Pimento", "Batata", "Batata-doce", "Cenoura"],
+      blocks: [
+        {
+          title: "Cultivar, regenerar e melhorar",
+          text: "O projeto nasce com uma ideia clara: produzir alimentos de máxima qualidade e, ao mesmo tempo, cuidar e melhorar a terra. Trabalhamos com rotações de culturas, melhoria da fertilidade e da vida do solo, uso eficiente da água e práticas que favorecem a biodiversidade.",
+        },
+        {
+          title: "Tecnologia e eficiência",
+          text: "Seguindo a filosofia da Agromonte, incorporamos sistemas de rega eficiente, controlo e monitorização das culturas e uma gestão cada vez mais baseada em dados: medir para melhorar, otimizar recursos e alcançar uma agricultura mais sustentável, produtiva e competitiva.",
+        },
+      ],
+      stats: [
+        { value: "100+", label: "hectares" },
+        { value: "5", label: "culturas" },
+        { value: "1", label: "mesma filosofia" },
+      ],
+      tagline: "Cultivar hoje, pensando no amanhã.",
+    },
+    technology: {
+      eyebrow: "Tecnologia & domótica",
+      title: "Agricultura de precisão ao serviço do cultivo",
+      lead: "A domótica permite gerir de forma coordenada a rega, a nutrição e as condições ambientais de toda a exploração. A tecnologia não substitui o conhecimento agrícola, potencia-o.",
+      features: [
+        {
+          title: "Monitorização em tempo real",
+          text: "Sensores que medem as necessidades reais de cada cultura, parcela a parcela.",
+        },
+        {
+          title: "Rega domótica",
+          text: "Ajuste contínuo da rega para otimizar cada gota de água utilizada.",
+        },
+        {
+          title: "Nutrição de precisão",
+          text: "Controlo e ajuste da nutrição vegetal consoante o estado de cada planta.",
+        },
+        {
+          title: "Resposta ao stress",
+          text: "Monitorização de variáveis ambientais e reação precoce perante situações críticas, como a cobertura vegetal responsável por captar o CO₂ da atmosfera e convertê-lo em azoto para a planta.",
+        },
+        {
+          title: "Decisões baseadas em dados",
+          text: "Menos erros operacionais graças a uma digitalização orientada por informação em tempo real. Antecipamo-nos aos problemas e maximizamos a produção.",
+        },
+      ],
+    },
+    certifications: {
+      eyebrow: "Garantias",
+      title: "Certificações que avalizam cada hectare",
+      certs: [
+        {
+          name: "Sohiscert",
+          text: "Garantia do cumprimento dos requisitos da produção biológica.",
+        },
+        {
+          name: "GLOBALG.A.P.",
+          text: "Referência internacional em boas práticas agrícolas, segurança alimentar e gestão da exploração.",
+        },
+        {
+          name: "GRASP",
+          text: "Integração de critérios sociais e laborais na gestão da exploração.",
+        },
+        {
+          name: "SPRING",
+          text: "Atenção especial à gestão responsável e eficiente da água.",
+        },
+      ],
+    },
+    environment: {
+      eyebrow: "Pegada hídrica & pegada de carbono",
+      title: "Cuidar do ambiente não é um extra: é o método",
+      text: "A rega tecnificada, a sensorização e os sistemas de proteção da cultura reduzem o consumo de água até níveis tecnicamente otimizados. A agricultura regenerativa melhora ainda a saúde do solo e favorece o armazenamento de carbono no próprio ecossistema agrícola. O nosso compromisso não se limita a «poluir menos»: procuramos conservar os recursos, regenerar o solo e aumentar a biodiversidade enquanto produzimos alimentos de qualidade.",
+      stats: [
+        { value: "50.000+", label: "árvores com cobertura vegetal, fixando o CO₂" },
+        {
+          value: "Rega de precisão",
+          label: "sensorização que ajusta a água à necessidade real",
+        },
+        {
+          value: "Controlo biológico",
+          label: "fauna auxiliar para o controlo natural de pragas",
+        },
+      ],
+      galleryAlt: [
+        "Abelha a polinizar uma flor na exploração",
+        "Flor de romãzeira completamente aberta, em primeiro plano",
+        "Inseto auxiliar para o controlo biológico de pragas",
+        "Fauna auxiliar utilizada no controlo biológico",
+        "Flor de romãzeira em primeiro plano, prestes a abrir",
+      ],
+    },
+    contact: {
+      eyebrow: "Contacto",
+      title: "Vamos falar de romã, tangerina e azeitona",
+      text: "É exportador, distribuidor ou simplesmente quer saber mais sobre o projeto Agromonte? Escreva-nos e responderemos o mais rapidamente possível.",
+      metaExplotacionLabel: "Exploração",
+      metaExplotacionValue:
+        "200+ hectares · agricultura regenerativa e biológica",
+      metaProductosLabel: "Produtos",
+      metaProductosValue:
+        "Romã biológica · Tangerina Nadorcott · Azeitona Manzanilla · Hortícolas",
+      formName: "Nome",
+      formEmail: "Email",
+      formSubject: "Assunto",
+      formSubjectPlaceholder: "Ex. Distribuição de romã biológica",
+      formMessage: "Mensagem",
+      submitIdle: "Enviar mensagem",
+      submitSending: "A enviar…",
+      statusOk: "Obrigado, recebemos a sua mensagem. Responderemos em breve.",
+      statusError:
+        "Não foi possível enviar a mensagem. Tente novamente ou escreva-nos diretamente para o nosso email.",
+    },
+    footer: {
+      tagline: "Produzir hoje, cuidando do amanhã.",
+      links: {
+        proyecto: "Projeto",
+        granada: "Romã",
+        mandarina: "Tangerina",
+        oliva: "Azeitona",
+        horticola: "Hortícola",
+        tecnologia: "Tecnologia",
+        contacto: "Contacto",
+      },
+      copy: (year) =>
+        `© ${year} Agromonte · Agricultura regenerativa, biológica e tecnológica.`,
+    },
+  },
 };
 
 export const LANGUAGES = [
   { code: "es", label: "ES" },
   { code: "en", label: "EN" },
   { code: "fr", label: "FR" },
+  { code: "de", label: "DE" },
+  { code: "pt", label: "PT" },
 ];
